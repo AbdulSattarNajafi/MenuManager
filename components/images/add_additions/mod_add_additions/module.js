@@ -25,7 +25,7 @@ $('#btn_add_additions').click(function(){
     const addition_row_template =
     `<!---additions row-->
     <div class="row additions_class addition_editable mt-2">
-      <div class="col-sm-6 mb-2">
+      <div class="col-sm-6">
         <input type="text" class="form-control">
       </div>
       <div class="col-sm-auto">

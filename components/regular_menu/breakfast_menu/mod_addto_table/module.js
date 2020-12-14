@@ -10,7 +10,7 @@ $('#btn_createinrow_item').click(function(){
     let newrow_html =
     `<tr class="edit_row">
         <td class="text-center">
-          <img src="assets/img/no-image.jpg" alt="" />
+          <img class="img-rectang" src="assets/img/no-image.jpg" alt="" />
         </td>
         <td><input type='text' class="form-control"/></td>
         <td><input type='text' class="form-control"/></td>
@@ -20,7 +20,7 @@ $('#btn_createinrow_item').click(function(){
               </button>
         </td>
         <td><input type='text' class="form-control"/></td>
-        <td><textarea type='text' class="form-control" style="height:60px; resize:none"></textarea></td>
+        <td><textarea type='text' class="form-control" style="height:40px; resize:none"></textarea></td>
         <td><input type='text' class="form-control"/></td>
         <td>
             
@@ -30,10 +30,10 @@ $('#btn_createinrow_item').click(function(){
           <button type="button" class="btn btn-secondary btn-sm mb-1">
             <i class="fa fa fa-eye"></i>
           </button>
-          <button type="button" class="btn btn-success btn-sm mb-1 green-btn">
+          <button type="button" class="btn btn-success btn-sm mb-1 btn-green">
             Save
           </button>
-          <button type="button" class="btn btn-danger btn-sm mb-1 red-btn">
+          <button type="button" class="btn btn-danger btn-sm mb-1 btn-red">
             <i class="fa fa-times"></i>
           </button>
         </td>
