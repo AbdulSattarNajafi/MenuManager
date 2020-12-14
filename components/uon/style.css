@@ -22,16 +22,27 @@
 }
 .active-toggle-title{
     font-size: 14pt;
-    padding:5px;
+    padding: 13px 0px;
+    padding-left:20px;
+    font-weight: 600;
 }
 #active-toggle{
     padding:5px 0px;
     margin-left:0px;
     margin-right:0px;
     background-color: #cfc;
+    border: solid 2px green;
     border-radius: 4px;
     margin-bottom: 15px;
+    position: relative;
 }
+#active-toggle button{
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+
 .selected_offer{
     margin:0 0 0 0;
     padding: 0 0 0 0;
@@ -86,4 +97,9 @@
 
 .val_global_btn{
     align-items: right;
+}
+
+#list_active_offers #section_offers li {
+    padding: 18px 0;
+    text-align: center;
 }

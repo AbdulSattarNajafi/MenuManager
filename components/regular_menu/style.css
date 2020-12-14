@@ -161,7 +161,7 @@
     position: absolute;
     bottom: -35px;
     width: 100px;
-    z-index: 9999;
+    z-index: 99;
     background-color: transparent;
     color: transparent;
     border: transparent;

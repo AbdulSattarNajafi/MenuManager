@@ -55,6 +55,15 @@
             left: 0;
             width: 100%;
         }
+        .btn-sm{
+            padding: .2rem .4rem;
+        }
+        .btn-green{
+            padding: .2rem .46rem;
+        }
+        .btn-red{
+            padding: .2rem .5rem;
+        }
         .td_allergens .algn{
             float: left;
             width: 20%;
@@ -65,7 +74,7 @@
         }
         .wkst_line div{
             float: left;
-            padding: 2px 4px;
+            padding-bottom: 2px;
             margin-right: 3px;
             margin-top: 3px;
             background-color: #fff;
@@ -142,6 +151,9 @@ ul#suggest_items li{
     width: 100%;
     margin: 2px;
 }
+ul#suggest_items li:first-child{
+    margin-top: 1rem;
+}
 ul#suggest_items li div{
     float: left;
 }
@@ -186,7 +198,6 @@ ul#suggest_items li .select_suggest:hover{
 */    
 #add_additions{
     padding: 10px;
-    border: solid 2px #eee;
     border-radius: 5px;;
 }
 #addadditions_title{
@@ -252,14 +263,24 @@ ul#suggest_items li .select_suggest:hover{
         color: red !important;
     }
    
-
+    /*
+       Subcmp_body
+    */
+    div.input-uploader{
+        display: flex;
+        flex-direction: column;
+    }
+    div.input-uploader div.uploaded-img{
+        border: 1px solid red;
+        height: 80px;
+        width: 50%;
+        margin-top: 1rem;
+    }
     /*
         Add Category
     */
     .additions_class{
-        border-bottom: solid 2px #eee;
-        border-top: solid 2px #eee;
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .additions_class .btn-success{
         display: none;

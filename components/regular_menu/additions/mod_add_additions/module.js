@@ -48,13 +48,13 @@ $('#btn_add_additions').click(function(){
           <input type="text" class="form-control" value="0.00" id="addrow_price`+random+`">
         </div>
         <div class="col-sm-auto">
-          <button type="button" class="btn btn-warning">
+          <button type="button" class="btn btn-warning btn-sm">
             <i class="fa fa-pencil"></i>
           </button>
-          <button type="button" class="btn btn-danger">
+          <button type="button" class="btn btn-danger btn-sm">
             <i class="fa fa-trash-o"></i>
           </button>
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn btn-success btn-sm">
             Save
           </button>
         </div>

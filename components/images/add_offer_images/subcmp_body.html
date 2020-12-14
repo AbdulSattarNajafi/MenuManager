@@ -25,6 +25,12 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Desktop</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">HD</a>
+        </li>
       </ul><!-- Tab panes -->
       
       <div class="tab-content">
@@ -38,21 +44,16 @@
           <div class="form-group row">
             <label for="sub-category" class="col-sm-3">File Upload</label>
             <div class="col-sm-9">
-              <div id="file-upload-form" class="form group uploader">
-                <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
-  
-                <label for="file-upload" id="file-drag">
-                  <img id="file-image" src="#" alt="Preview" class="hidden">
-                  <div id="start">
-                    <i class="fa fa-download" aria-hidden="true"></i>
-                    <div>Select a file or drag here</div>
-                    <div id="notimage" class="hidden">Please select an image</div>
-                    <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
-                  </div>
-                  <div id="response" class="hidden">
-                    <div id="messages"></div>
-                  </div>
-                </label>
+              <div id="file-upload-form" class="form group uploader input-uploader">
+                <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
+                <div class="uploaded-img">
+                  <label for="file-upload" id="file-drag">
+                    <img id="file-image" src="#" alt="Preview" class="hidden">
+                    <div id="response" class="hidden">
+                      <div id="messages"></div>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -93,6 +94,12 @@
         </div>
         <div class="tab-pane" id="tabs-3" role="tabpanel">
           <p>Third Panel</p>
+        </div>
+        <div class="tab-pane" id="tabs-4" role="tabpanel">
+          <p>Fourth Panel</p>
+        </div>
+        <div class="tab-pane" id="tabs-5" role="tabpanel">
+          <p>Fifth Panel</p>
         </div>
       </div>
 

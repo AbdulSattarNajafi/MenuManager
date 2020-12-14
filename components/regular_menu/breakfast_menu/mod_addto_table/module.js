@@ -8,14 +8,14 @@ load_module('modal_additions','regular_menu/breakfast_menu/mod_select_additions'
 $('#btn_createinrow_item').click(function(){
 
     let newrow_html =
-    `<tr>
+    `<tr class="edit_row">
         <td class="text-center">
           <img src="assets/img/no-image.jpg" alt="" />
         </td>
         <td><input type='text' class="form-control"/></td>
         <td><input type='text' class="form-control"/></td>
         <td>
-            <button type="button" class="btn btn-light">
+            <button type="button" class="btn btn-light btn-sm">
                 <i class="fa fa fa-times"></i>
               </button>
         </td>
@@ -27,13 +27,13 @@ $('#btn_createinrow_item').click(function(){
         </td>
         <td></td>
         <td>
-          <button type="button" class="btn btn-secondary">
+          <button type="button" class="btn btn-secondary btn-sm mb-1">
             <i class="fa fa fa-eye"></i>
           </button>
-          <button type="button" class="btn btn-success">
+          <button type="button" class="btn btn-success btn-sm mb-1 green-btn">
             Save
           </button>
-          <button type="button" class="btn btn-danger">
+          <button type="button" class="btn btn-danger btn-sm mb-1 red-btn">
             <i class="fa fa-times"></i>
           </button>
         </td>
@@ -43,7 +43,7 @@ $('#btn_createinrow_item').click(function(){
 });
 
 $('#btn_addtorow_image').click(function(){
-    $('.carousel-inner').slick({
+    $('#regmenu_imagecarousel .carousel-inner').slick({
       centerMode: true,
       centerPadding: '60px',
       slidesToShow: 7,
@@ -69,4 +69,9 @@ $('#btn_addtorow_image').click(function(){
       ],
       autoplay:false
     });
+  });
+
+  $('#regmenu_imagecarousel .carousel-inner').on('afterChange', function(slick, currentSlide){
+    let img_src = $('#regmenu_imagecarousel .slick-current').attr('src');
+    $('.edit_row img').attr('src',img_src);
   });

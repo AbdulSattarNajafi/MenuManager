@@ -24,8 +24,8 @@ $('#btn_add_additions').click(function(){
     let random = Math.random();
     const addition_row_template =
     `<!---additions row-->
-    <div class="row additions_class addition_editable">
-      <div class="col-sm-6">
+    <div class="row additions_class addition_editable mt-2">
+      <div class="col-sm-6 mb-2">
         <input type="text" class="form-control">
       </div>
       <div class="col-sm-auto">
@@ -43,13 +43,13 @@ $('#btn_add_additions').click(function(){
         <label>Paid</label>
       </div>
       <div class="col-sm-3">
-        <button type="button" class="btn btn-warning">
+        <button type="button" class="btn btn-warning btn-sm">
           <i class="fa fa-pencil"></i>
         </button>
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn btn-danger btn-sm">
           <i class="fa fa-trash-o"></i>
         </button>
-        <button type="button" class="btn btn-success">
+        <button type="button" class="btn btn-success btn-sm">
           Save
         </button>
       </div>
