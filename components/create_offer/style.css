@@ -79,10 +79,10 @@
 }
 .create_itemstation{
     margin-top:4px;
-    width: 19px;
-    font-size: .7rem;
+    width: 25px;
+    font-size: .6rem;
     border-radius: 3px;
-    padding:2px 4px 2px 3px;
+    padding:2px 5px 2px 2px;
     text-align: center;
     display: inline-block;
 }

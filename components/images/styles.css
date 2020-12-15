@@ -63,12 +63,12 @@
             padding: .2rem .5rem;
         }
         .table th, .table td{
-            padding-left: 4px;
-            padding-right: 4px;
+            padding-left: 6px;
+            padding-right: 6px;
         }
         .table td{
-            padding-top: .3rem;
-            padding-bottom: .3rem;
+            padding-top: .4rem;
+            padding-bottom: .4rem;
         }
         
         td>.img-rectang{
@@ -80,15 +80,15 @@
             height: 60px;
         }
         th.no-pad, td.no-pad{
-            padding-left: 4px;
-            padding-right: 4px;
-            width: 88px;
+            padding-left: 6px;
+            padding-right: 6px;
+            width: 72px;
         }
         th.sqr-img, td.sqr-img{
-            padding-left: 4px;
-            padding-right: 4px;
+            padding-left: 6px;
+            padding-right: 6px;
             text-align: center;
-            width: 68px;
+            width: 72px;
         }
         .td_allergens .algn{
             float: left;
@@ -298,9 +298,7 @@ ul#suggest_items li .select_suggest:hover{
         flex-direction: column;
     }
     div.input-uploader div.uploaded-img{
-        border: 1px solid red;
-        height: 80px;
-        width: 50%;
+        width: 40%;
         margin-top: 1rem;
     }
     /*

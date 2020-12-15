@@ -23,7 +23,6 @@ $('#btn_createinrow_item').click(function(){
         <td><textarea type='text' class="form-control" style="height:40px; resize:none"></textarea></td>
         <td></td>
         <td></td>
-        <td></td>
         <td><input type='text' class="form-control"/></td>
         <td>
             
@@ -41,8 +40,9 @@ $('#btn_createinrow_item').click(function(){
           </button>
         </td>
       </tr>`;
-      let resultBox = $('#results_table_placeholder tbody');
-      resultBox.prepend(newrow_html);
+ 
+      $('#results_table_placeholder #tr_remo').remove();
+      $('#results_table_placeholder tbody').prepend(newrow_html);
 });
 
 $('#btn_addtorow_image').click(function(){

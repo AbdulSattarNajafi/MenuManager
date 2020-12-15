@@ -3,6 +3,7 @@
 */
 #list_active_offers{
     margin-top:20px;
+    padding-bottom: 30px;
 }
 #list_active_offers ul li{
     cursor: pointer;
@@ -27,7 +28,6 @@
     font-weight: 600;
 }
 #active-toggle{
-    padding:5px 0px;
     margin-left:0px;
     margin-right:0px;
     background-color: #cfc;
