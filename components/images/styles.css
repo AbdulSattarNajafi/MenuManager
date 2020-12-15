@@ -66,6 +66,10 @@
             padding-left: 4px;
             padding-right: 4px;
         }
+        .table td{
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+        }
         
         td>.img-rectang{
             width: 80px;
@@ -76,16 +80,15 @@
             height: 60px;
         }
         th.no-pad, td.no-pad{
-            padding-left: 0;
-            padding-right: 0;
-            width: 80px;
-            text-align: center;
+            padding-left: 4px;
+            padding-right: 4px;
+            width: 88px;
         }
         th.sqr-img, td.sqr-img{
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: 4px;
+            padding-right: 4px;
             text-align: center;
-            width: 60px;
+            width: 68px;
         }
         .td_allergens .algn{
             float: left;
