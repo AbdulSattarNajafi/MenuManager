@@ -18,11 +18,11 @@
 
 
 #create_filldata{
-    padding-top:20px;
+    padding:20px 0;
 }
 .daily_offer_title{
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 0;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
@@ -79,9 +79,11 @@
 }
 .create_itemstation{
     margin-top:4px;
-    width: 25px;
+    width: 19px;
+    font-size: .7rem;
     border-radius: 3px;
-    padding:2px 4px;
+    padding:2px 4px 2px 3px;
+    text-align: center;
     display: inline-block;
 }
 

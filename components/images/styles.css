@@ -22,8 +22,6 @@
     margin: 5px;
 }
 
-
-
 /* Regular Menu */
 
 #regular_menu_categories{
@@ -64,6 +62,11 @@
         .btn-red{
             padding: .2rem .5rem;
         }
+        .table th, .table td{
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        
         td>.img-rectang{
             width: 80px;
             height: 40px;
@@ -71,6 +74,18 @@
         td>.img-sqr{
             width: 60px;
             height: 60px;
+        }
+        th.no-pad, td.no-pad{
+            padding-left: 0;
+            padding-right: 0;
+            width: 80px;
+            text-align: center;
+        }
+        th.sqr-img, td.sqr-img{
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            width: 60px;
         }
         .td_allergens .algn{
             float: left;
@@ -87,7 +102,7 @@
             margin-top: 3px;
             font-size: .7rem;
             background-color: #fff;
-            width: 19px;
+            width: 28px;
             text-align: center;
             border-radius: 4px;
         }

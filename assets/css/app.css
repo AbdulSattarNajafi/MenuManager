@@ -42,6 +42,10 @@
 /*
 *   App Body
 */
+#app_body{
+    max-width: 1300px;
+    margin: auto;
+}
 #app_body>.container{
     border: solid 1px #eee;
     border-radius: 5px;

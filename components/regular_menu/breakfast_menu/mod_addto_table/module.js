@@ -9,7 +9,7 @@ $('#btn_createinrow_item').click(function(){
 
     let newrow_html =
     `<tr class="edit_row">
-        <td class="text-center">
+        <td class="no-pad">
           <img class="img-rectang" src="assets/img/no-image.jpg" alt="" />
         </td>
         <td><input type='text' class="form-control"/></td>
