@@ -21,6 +21,9 @@
     color: black;
     transition: .4s;
 }
+#list_active_offers ul li .active{
+    color: #fff;
+}
 #list_active_offers ul li:hover a{
     color: #fff;
 }

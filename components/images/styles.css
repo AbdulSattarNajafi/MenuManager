@@ -167,7 +167,7 @@
 }
 ul#suggest_items{
     list-style: none;
-    height: 300px;
+    height: 205px;
     border: solid 1px #eee;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -192,7 +192,7 @@ ul#suggest_items li .select_suggest{
     border-radius: 4px;
 }
 ul#suggest_items li .select_suggest a{
-    color:teal !important;
+    color:black !important;
     pointer-events: none;
 }
 ul#suggest_items li .select_suggest:hover{

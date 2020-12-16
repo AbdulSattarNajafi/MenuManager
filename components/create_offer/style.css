@@ -104,6 +104,9 @@ a{
     color: black;
     transition: all .3s;
 }
+#list_filldata_titles li .active{
+    color: #fff;
+}
 #list_filldata_titles li:hover{
     background-color:#007bff;  
 }

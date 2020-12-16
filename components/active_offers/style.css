@@ -34,6 +34,8 @@
 }
 #btn-with-eys{
     position: relative;
+    display: flex;
+    justify-content: space-between;
     margin-top: -6px;
     margin-bottom: 0;
     height: 47px;
@@ -47,9 +49,11 @@
     padding-bottom: 2px;
 }
 #btn-with-x{
-    margin-right: 10px;
-    width: 124px;
-    text-align: left;
+    margin-right: 33px;
+    width: 118px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #active-toggle{
     padding:5px 0px;

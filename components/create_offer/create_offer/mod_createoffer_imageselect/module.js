@@ -71,3 +71,4 @@ $('#create_itemimage .carousel-inner').slick({
     let img_src = $('#create_itemimage .slick-current').attr('src');
     $('.filldata_image_container .filldata_image_image').attr('src',img_src);
   });
+
