@@ -8,12 +8,21 @@
 #list_active_offers ul li{
     padding-top: 8px;
     padding-bottom: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
     cursor: pointer;
     transition: all .4s;
 }
 #list_active_offers ul li:hover{
-    background-color: #444;
-    color: #fff
+    background-color: #007bff;
+}
+#list_active_offers ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+}
+#list_active_offers ul li:hover a{
+    color: #fff;
 }
 
 .activeoffers-section-title{
@@ -42,8 +51,8 @@
 #active-toggle button{
     display: inline-block;
     position: absolute;
-    right: 12px;
     top: 8px;
+    right: 12px;
     padding-top: 0;
     padding-bottom: 2px;
 }
@@ -67,13 +76,14 @@
 /*
     UON
 */ 
-
-#image_uon{
-    position: absolute;
-    bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: calc(100% - 20px);
+#image_uon_desc{
+    display: flex;
+    justify-content: center;
+}
+#image_uon_desc #image_uon{
+    width: 310px;
+    margin-left: 8px;
+    text-align: center;
     border-radius: 5px;
     padding: 5px;
     font-size: 1.4em;
@@ -81,6 +91,10 @@
 }
 .activeuon_item{
     display: inline-block;
+    color: black;
+}
+.activeuon_item:hover{
+    color: #fff;
 }
 .activeuon_item button{
     padding: 3px 7px;
@@ -93,10 +107,16 @@
 .activeuon_item.val_global_btn{
     text-align:right;
 }
-
+.list-group-item{
+    transition: all .3s;
+}
 .list-group-item.selected{
-    background-color: #444;
-    color:#fff;
+    background-color: #007bff;
+    color:#fff !important;
+}
+
+.list-group-item:hover{
+    color: #fff;
 }
 
 

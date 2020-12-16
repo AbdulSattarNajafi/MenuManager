@@ -1,6 +1,9 @@
 /*
     Create New Common CSS
 */
+a{
+    text-decoration: none;
+}
 #create_button_row{
     margin-top: 20px;
     padding-left: 25px;
@@ -91,12 +94,21 @@
     Fill data
 */
 #list_filldata_titles li{
+    border: 2px solid #ccc;
+    border-radius: 4px;
     transition: all .3s;
     cursor: pointer;
 }
+#list_filldata_titles li a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
 #list_filldata_titles li:hover{
-    background-color:#444;
-    color: #fff;    
+    background-color:#007bff;  
+}
+#list_filldata_titles li:hover a{
+    color: #fff;
 }
 #list_filldata{
     margin-top:20px

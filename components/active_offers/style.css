@@ -5,12 +5,21 @@
     margin-top:20px;
 }
 #list_active_offers ul li{
+    border: 2px solid #ccc;
+    border-radius: 4px;
     cursor: pointer;
     transition: all .4s;
 }
 #list_active_offers ul li:hover{
-    background-color: #444;
-    color: #fff
+    background-color: #007bff;
+}
+#list_active_offers ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all .4s;
+}
+#list_active_offers ul li:hover a{
+    color: #fff;
 }
 
 .activeoffers-section-title{
@@ -36,6 +45,11 @@
     bottom: 9px;
     padding-top: 0;
     padding-bottom: 2px;
+}
+#btn-with-x{
+    margin-right: 10px;
+    width: 124px;
+    text-align: left;
 }
 #active-toggle{
     padding:5px 0px;
