@@ -23,6 +23,20 @@
 .active-toggle-title{
     padding:5px;
 }
+#btn-with-eys{
+    position: relative;
+    margin-top: -6px;
+    margin-bottom: 0;
+    height: 47px;
+}
+#btn-with-eys button{
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    bottom: 9px;
+    padding-top: 0;
+    padding-bottom: 2px;
+}
 #active-toggle{
     padding:5px 0px;
     margin-left:0px;

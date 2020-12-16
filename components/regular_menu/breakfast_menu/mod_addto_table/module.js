@@ -44,7 +44,7 @@ $('#btn_createinrow_item').click(function(){
       $('#results_table_placeholder #tr_remo').remove();
       $('#results_table_placeholder tbody').prepend(newrow_html);
 });
-
+//Images
 $('#btn_addtorow_image').click(function(){
     $('#regmenu_imagecarousel .carousel-inner').slick({
       centerMode: true,
@@ -76,5 +76,39 @@ $('#btn_addtorow_image').click(function(){
 
   $('#regmenu_imagecarousel .carousel-inner').on('afterChange', function(slick, currentSlide){
     let img_src = $('#regmenu_imagecarousel .slick-current').attr('src');
+    $('.edit_row img').attr('src',img_src);
+  });
+//Video
+  $('#btn_addtorow_video').click(function(){
+    $('#regmenu_imagecarousel .carousel-inner').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 7,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ],
+      autoplay:false
+    });
+  });
+
+  $('#regmenu_videocarousel .carousel-inner').on('afterChange', function(slick, currentSlide){
+    let img_src = $('#regmenu_videocarousel .slick-current').attr('src');
     $('.edit_row img').attr('src',img_src);
   });
