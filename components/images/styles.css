@@ -381,3 +381,82 @@ input[type=checkbox] {
 .addrow_price input{
     width: 90px;
 }
+/*Allergens*/
+#add_allergens{
+    padding-top: 1px;
+}
+
+#algen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+  }
+  #algen #txt-arr{
+    width: 62%;
+  }
+  #algen #txt-arr textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    padding-top: .7rem;
+    font-weight: 550;
+    margin-bottom: 0 1rem;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  /*Allergen Form*/
+  #allergen-form{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 4rem;
+  }
+  #allergen-form .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #allergen-form .flex .inpt{
+    width: 62%;
+  }
+  #allergen-form .flex .inpt input{
+    width: 100%;
+    height: 46px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0 1rem ;
+    font-size: 1.6rem;
+  }
+  #allergen-form .flex #upload-img,
+  #allergen-form .flex #txt-arr{
+    width: 62%;
+  }
+  #allergen-form .flex #upload-img #allergen-img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 160px;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: gray;
+    margin-bottom: 1rem;
+  }
+  #allergen-form .flex #txt-arr textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    padding-top: .7rem;
+    font-weight: 550;
+    margin-bottom: 0 1rem;
+    resize: none;
+    overflow: hidden;
+  }

@@ -76,9 +76,9 @@ $('#create_itemimage .carousel-inner').slick({
   });
 //Video
 {$('#btn_addtorow_video').click(function(){
-  $('.card-body .video-back').show();
   $('.card-body .image-back').hide();
   $('.card-body .image-front').hide();
+  $('.card-body .video-back').show();
   $('#create_itemimage .carousel-inner').slick({
       centerMode: true,
       centerPadding: '60px',
@@ -105,7 +105,12 @@ $('#create_itemimage .carousel-inner').slick({
       ],
       autoplay:false
     });
-    window.addEventListener('load')
+    $('#create_backgroundimage .carousel-inner').on('init', function(slick){
+      let img_src = $('#create_backgroundimage .slick-current').attr('src');
+      $('.filldata_image_container h1').remove();
+      $('.filldata_image_container').css('background-image','url('+img_src+')');
+    });
+    
   });
 
 $('#create_itemimage .carousel-inner').on('afterChange', function(slick, currentSlide){
