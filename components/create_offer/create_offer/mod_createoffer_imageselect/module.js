@@ -1,4 +1,7 @@
 $('#btn_addtorow_image').click(function(){
+  $('.card-body .image-back').show();
+  $('.card-body .image-front').show();
+  $('.card-body .video-back').hide();
     $('#create_backgroundimage .carousel-inner').slick({
       centerMode: true,
       centerPadding: '60px',
@@ -71,4 +74,42 @@ $('#create_itemimage .carousel-inner').slick({
     let img_src = $('#create_itemimage .slick-current').attr('src');
     $('.filldata_image_container .filldata_image_image').attr('src',img_src);
   });
+//Video
+{$('#btn_addtorow_video').click(function(){
+  $('.card-body .video-back').show();
+  $('.card-body .image-back').hide();
+  $('.card-body .image-front').hide();
+  $('#create_itemimage .carousel-inner').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 11,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ],
+      autoplay:false
+    });
+    window.addEventListener('load')
+  });
+
+$('#create_itemimage .carousel-inner').on('afterChange', function(slick, currentSlide){
+  let img_src = $('#create_itemimage .slick-current').attr('src');
+  $('.filldata_image_container .filldata_image_image').attr('src',img_src);
+});}
 
