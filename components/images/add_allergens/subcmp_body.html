@@ -12,7 +12,7 @@
       <label for="allergen-desc"><h4>Allergen Description:</h4></label>
     </div>
     <div id="txt-arr">
-      <textarea name="allergen-desc" id="allergen-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit the magni porro veritatis tempora sed nam, accusamus in incidunt explicabo.</textarea>
+      <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="40" placeholder="Specific Description" spellcheck="false"></textarea>
     </div>
   </div>
   <div class="col-sm-2"></div>
@@ -27,14 +27,22 @@
           <label for="prawns"><h4>Allergen Name:</h4></label>
         </div>
       <div class="inpt">
-        <input type="text" id="prawns" name="prawns" placeholder="Prawns">
+        <input class="form-control dyn-input" type="text" id="prawns" name="prawns" placeholder="Prawns">
       </div>
     </div>
-      <div class="flex">
+    <div class="flex">
+      <div>
+        <label for="allergen-desc"><h4>Allergen Description:</h4></label>
+      </div>
+      <div id="txt-arr">
+        <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="Specific Description" spellcheck="false"></textarea>
+      </div>
+    </div>
+      <div class="flex mt-3">
         <div>
           <label for="allergen-num"><h4>Allergen Number:</h4></label>
         </div>
-        <div class="inpt">
+        <div id="txt-arr" class="inpt">
           <input type="number" id="allergen-num" name="allergen-num" placeholder="4">
         </div>
       </div>
@@ -46,14 +54,7 @@
           <div id="allergen-img">Upload Image</div>
         </div>
       </div>
-      <div class="flex">
-        <div>
-          <label for="allergen-desc"><h4>Allergen Description:</h4></label>
-        </div>
-        <div id="txt-arr">
-          <textarea name="allergen-desc" id="allergen-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit the magni porro veritatis tempora sed nam, accusamus in incidunt explicabo.</textarea>
-        </div>
-      </div>
+      
     </form>
   </div>
   <div class="col-sm-2"></div>

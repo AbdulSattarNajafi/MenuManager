@@ -34,6 +34,7 @@
       </ul><!-- Tab panes -->
       
       <div class="tab-content">
+        <!--Tab Content-1-->
         <div class="tab-pane active" id="tabs-1" role="tabpanel">
           <div class="form-group row">
             <label for="file-name" class="col-sm-3">File Name</label>
@@ -46,9 +47,9 @@
             <div class="col-sm-9">
               <div id="file-upload-form" class="form group uploader input-uploader">
                 <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
-                <div class="uploaded-img">
+                <div class="uploaded-img" style="width: 48%;">
                   <label for="file-upload" id="file-drag">
-                    <img id="file-image" src="assets/img/no-img.jpg" alt="Preview" class="hidden img-fluid">
+                      <img id="file-image" src="assets/img/no-img.jpg" alt="Preview" class=" img-fluid">
                     <div id="response" class="hidden">
                       <div id="messages"></div>
                     </div>
@@ -60,7 +61,7 @@
           <div class="form-group row">
             <label for="image-id" class="col-sm-3">Image Id</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="SonyCam-12232.jpg" disabled>
+              <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="Image Id" disabled>
             </div>
           </div>
           <div class="form-group row">
@@ -72,7 +73,7 @@
           <div class="form-group row">
             <label for="file-description" class="col-sm-3">File Upload</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="file-description" placeholder="File Description" disabled value="12/11/2020">
+              <input type="text" class="form-control" id="file-description" placeholder="" disabled value="">
             </div>
           </div>
           <div class="form-group row">
@@ -89,17 +90,233 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="tabs-2" role="tabpanel">
-          <p>Second Panel</p>
+        <!--Tab Content-2-->
+        <div class="tab-pane tab_light_gray" id="tabs-2" role="tabpanel">
+          <div class="tab-pane tab_light_gray active" id="tabs-1" role="tabpanel">
+            <div class="form-group row">
+              <label for="file-name" class="col-sm-3">File Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-name" placeholder="File Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="sub-category" class="col-sm-3">File Upload</label>
+              <div class="col-sm-9">
+                <div id="file-upload-form" class="form group uploader input-uploader">
+                  <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
+                  <div class="uploaded-img" style="width: 48%;">
+                    <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="assets/img/no-img.jpg" alt="Preview" class=" img-fluid">
+                      <div id="response" class="hidden">
+                        <div id="messages"></div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="image-id" class="col-sm-3">Image Id</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="Image Id" disabled>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="file-size" class="col-sm-3">File Size</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-size" placeholder="File Size" value="0.0 Mb" disabled>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="file-description" class="col-sm-3">File Upload</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-description" placeholder="File Description" disabled value="File Upload Date">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label for="file-description" class="col-sm-3">File Desc.</label>
+              <div class="col-sm-9">
+                <textarea type="text" class="form-control" style="resize:none; overflow:hidden" height="30" id="file-description" placeholder="File Description"></textarea>
+              </div>
+            </div>
+          </div>
         </div>
+        <!--Tab Content-3-->
         <div class="tab-pane" id="tabs-3" role="tabpanel">
-          <p>Third Panel</p>
+          <div class="tab-pane active" id="tabs-1" role="tabpanel">
+            <div class="form-group row">
+              <label for="file-name" class="col-sm-3">File Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-name" placeholder="File Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="sub-category" class="col-sm-3">File Upload</label>
+              <div class="col-sm-9">
+                <div id="file-upload-form" class="form group uploader input-uploader">
+                  <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
+                  <div class="uploaded-img" style="width: 48%;">
+                    <label for="file-upload" id="file-drag">
+                        <img id="file-image" src="assets/img/no-img.jpg" alt="Preview" class=" img-fluid">
+                      <div id="response" class="hidden">
+                        <div id="messages"></div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="image-id" class="col-sm-3">Image Id</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="Image Id" disabled>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="file-size" class="col-sm-3">File Size</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-size" placeholder="File Size" value="0.0 Mb" disabled>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="file-description" class="col-sm-3">File Upload</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="file-description" placeholder="File Description" disabled value="File Upload Date">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label for="file-description" class="col-sm-3">File Desc.</label>
+              <div class="col-sm-9">
+                <textarea type="text" class="form-control" style="resize:none; overflow:hidden" height="30" id="file-description" placeholder="File Description"></textarea>
+              </div>
+            </div>
+          </div>
         </div>
+        <!--Tab Content-4-->
         <div class="tab-pane" id="tabs-4" role="tabpanel">
-          <p>Fourth Panel</p>
+          <div class="tab-pane" id="tabs-3" role="tabpanel">
+            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+              <div class="form-group row">
+                <label for="file-name" class="col-sm-3">File Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-name" placeholder="File Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="sub-category" class="col-sm-3">File Upload</label>
+                <div class="col-sm-9">
+                  <div id="file-upload-form" class="form group uploader input-uploader">
+                    <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
+                    <div class="uploaded-img" style="width: 75px; height: 75px;">
+                      <label for="file-upload" id="file-drag">
+                          <img id="file-image" src="assets/img/no-img-facebook.jpg" alt="Preview" class=" img-fluid">
+                        <div id="response" class="hidden">
+                          <div id="messages"></div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="image-id" class="col-sm-3">Image Id</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="Image Id" disabled>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="file-size" class="col-sm-3">File Size</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-size" placeholder="File Size" value="0.0 Mb" disabled>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="file-description" class="col-sm-3">File Upload</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-description" placeholder="File Description" disabled value="File Upload Date">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label for="file-description" class="col-sm-3">File Desc.</label>
+                <div class="col-sm-9">
+                  <textarea type="text" class="form-control" style="resize:none; overflow:hidden" height="30" id="file-description" placeholder="File Description"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!--Tab Content-5-->
         <div class="tab-pane" id="tabs-5" role="tabpanel">
-          <p>Fifth Panel</p>
+          <div class="tab-pane" id="tabs-3" role="tabpanel">
+            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+              <div class="form-group row">
+                <label for="file-name" class="col-sm-3">File Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-name" placeholder="File Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="sub-category" class="col-sm-3">File Upload</label>
+                <div class="col-sm-9">
+                  <div id="file-upload-form" class="form group uploader input-uploader">
+                    <div><input id="file-upload" type="file" name="fileUpload" accept="image/*" /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="image-id" class="col-sm-3">Image Id</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="image-id" placeholder="Image Id" value="Image Id" disabled>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="file-size" class="col-sm-3">File Size</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-size" placeholder="File Size" value="0.0 Mb" disabled>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="file-description" class="col-sm-3">File Upload</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="file-description" placeholder="File Upload Date" disabled value="File Upload Date">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="alt-tag" class="col-sm-3">Alt Tag</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="alt-tag" placeholder="Alt Tag">
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label for="file-description" class="col-sm-3">File Desc.</label>
+                <div class="col-sm-9">
+                  <textarea type="text" class="form-control" style="resize:none; overflow:hidden" height="30" id="file-description" placeholder="File Description"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
