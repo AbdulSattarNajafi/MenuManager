@@ -14,9 +14,9 @@ $('#btn_createinrow_item').click(function(){
         </td>
         <td><input type='text' class="form-control"/></td>
         <td><input type='text' class="form-control"/></td>
-        <td>
-            <button type="button" class="btn btn-light btn-sm">
-                <i class="fa fa fa-times"></i>
+        <td class="btn-container">
+            <button type="button" class="btn btn-light btn-sm empty-btn">
+            
               </button>
         </td>
         <td><input type='text' class="form-control"/></td>
@@ -40,6 +40,7 @@ $('#btn_createinrow_item').click(function(){
           </button>
         </td>
       </tr>`;
+     
  
       $('#results_table_placeholder #tr_remo').remove();
       $('#results_table_placeholder tbody').prepend(newrow_html);

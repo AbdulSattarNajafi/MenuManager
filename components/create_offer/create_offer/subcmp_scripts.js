@@ -20,5 +20,5 @@ load_module('create-add-images','create_offer/create_offer/mod_createoffer_image
     }else{
       $('#create_filldata_data').css('outline','none');
     }
-  }); 
+  }); //
   

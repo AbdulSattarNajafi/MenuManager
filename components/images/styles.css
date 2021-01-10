@@ -90,6 +90,14 @@
             text-align: center;
             width: 72px;
         }
+        td.btn-container .empty-btn{
+            padding: 0;
+            width: 30px;
+            height: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .td_allergens .algn{
             float: left;
             width: 20%;
@@ -105,7 +113,7 @@
             margin-top: 3px;
             font-size: .7rem;
             background-color: #fff;
-            width: 28px;
+            width: 31px;
             text-align: center;
             border-radius: 4px;
         }
@@ -154,12 +162,11 @@
 
 .delete_category{
     background-color: red;
-    padding: 4px 8px;
+    padding: 0 3px 3px 3px;
     vertical-align: middle;
     border-radius: 4px;
     color: #fff;
     position: relative;
-    margin-top: 4px;
     cursor: pointer;
 }
 .delete_category:hover{
@@ -187,12 +194,14 @@ ul#suggest_items li div{
 ul#suggest_items li .select_suggest{
     width:80%;
     margin-right:5px;
-    padding: 3px;
+    padding: 0 3px 3px 3px;
     padding-left:10px;
+    margin-top: 3px;
     border-radius: 4px;
 }
 ul#suggest_items li .select_suggest a{
     color:black !important;
+    font-size: 15px;
     pointer-events: none;
 }
 ul#suggest_items li .select_suggest:hover{
@@ -302,7 +311,12 @@ ul#suggest_items li .select_suggest:hover{
         flex-direction: column;
     }
     div.input-uploader div.uploaded-img{
-        width: 40%;
+        width: 48%;
+        margin-top: 1rem;
+    }
+    div.input-uploader div.facebook-img{
+        width: 86px;
+        height: 86px;
         margin-top: 1rem;
     }
     /*
