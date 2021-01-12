@@ -17,6 +17,7 @@ load_module('create-add-images','create_offer/create_offer/mod_createoffer_image
 
     if($(this).attr('id')=='btn_createoffer_edit'){
       $('#create_filldata_data').css('outline','solid 4px #e00');
+      $('#create_filldata_data').css('outline-offset','10px');
     }else{
       $('#create_filldata_data').css('outline','none');
     }
