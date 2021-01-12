@@ -20,10 +20,10 @@ $('#btn_createinrow_item').click(function(){
             <i class="empty-icon"></i>
             </button>
         </td>
-        <td><input type='text' class="form-control"/></td>
-        <td><textarea type='text' class="form-control" style="height:40px; resize:none"></textarea></td>
-        <td></td>
-        <td></td>
+        <td><input type='text' class="form-control pl-1 pr-1"/></td>
+        <td><textarea type='text' class="form-control pl-1 pr-1" style="height:40px; resize:none"></textarea></td>
+        <td><input type='text' class="form-control pl-1 pr-1"/></td>
+        <td><input type='text' class="form-control pl-1 pr-1"/></td>
         <td><input type='text' class="form-control  pl-1 pr-1"/></td>
         <td>
             
