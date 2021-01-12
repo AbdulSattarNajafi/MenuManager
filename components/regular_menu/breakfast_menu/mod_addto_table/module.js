@@ -5,6 +5,7 @@ $('#additions').select2({
 
 load_module('modal_additions','regular_menu/breakfast_menu/mod_select_additions');
 
+
 $('#btn_createinrow_item').click(function(){
 
     let newrow_html =
@@ -12,18 +13,18 @@ $('#btn_createinrow_item').click(function(){
         <td class="no-pad">
           <img class="img-rectang" src="assets/img/no-image.jpg" alt="" />
         </td>
-        <td><input type='text' class="form-control"/></td>
-        <td><input type='text' class="form-control"/></td>
+        <td><input type='text' class="form-control pl-1 pr-1"/></td>
+        <td><input type='text' class="form-control  pl-1 pr-1"/></td>
         <td class="btn-container">
             <button type="button" class="btn btn-light btn-sm empty-btn">
-            
-              </button>
+            <i class="empty-icon"></i>
+            </button>
         </td>
         <td><input type='text' class="form-control"/></td>
         <td><textarea type='text' class="form-control" style="height:40px; resize:none"></textarea></td>
         <td></td>
         <td></td>
-        <td><input type='text' class="form-control"/></td>
+        <td><input type='text' class="form-control  pl-1 pr-1"/></td>
         <td>
             
         </td>
@@ -40,10 +41,13 @@ $('#btn_createinrow_item').click(function(){
           </button>
         </td>
       </tr>`;
-     
- 
+
       $('#results_table_placeholder #tr_remo').remove();
       $('#results_table_placeholder tbody').prepend(newrow_html);
+      //Adding icon to the Button
+      $('.edit_row .empty-btn').click(function() {
+        $('.edit_row .empty-btn .empty-icon').addClass('fa fa-check fa-lg');
+      });
 });
 //Images
 $('#btn_addtorow_image').click(function(){

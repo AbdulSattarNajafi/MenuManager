@@ -67,33 +67,47 @@
   <div class="row">
     <div class="col-sm-12 text-left" id="menu_add_row">
       <button type="button" id="btn_createinrow_item" class="btn btn-secondary">
-        Items
+        Items&nbsp;
         <i class="fa fa-plus"></i>
       </button>
 
       <button type="button" id="btn_addtorow_image" data-toggle="collapse" data-target="#menu-add-images" aria-expanded="false" aria-controls="menu-add-collapse" class="btn btn-secondary">
-        Images
+        Images&nbsp;
         <i class="fa fa-plus"></i>
       </button>
 
       <button type="button" id="btn_addtorow_video" data-toggle="collapse" data-target="#menu-add-images" aria-expanded="false" aria-controls="menu-add-collapse" class="btn btn-secondary">
-        Videos
+        Videos&nbsp;
         <i class="fa fa-plus"></i>
       </button>
 
       <button type="button" id="btn_addtorow_additions" class="btn btn-secondary" data-toggle="modal" data-target="#modal_additions_content">
-        Additions
+        Options&nbsp;
         <i class="fa fa-plus"></i>
       </button>
 
       <button type="button" id="btn_addtorow_additions" class="btn btn-secondary" data-toggle="modal" data-target="#modal_descriptions_content">
-        Descriptions
+        Descriptions&nbsp;
         <i class="fa fa-plus"></i>
       </button>
     </div>
   </div>
 </div>
 
+  <!--Menu Description-->
+<div class="container-fluid mt-2" id="meal-container">
+  <div class="row">
+    <div class="col-sm-12 text-left" id="meals-menu">
+      <form class="form-inline">
+        <button type="button" id="menu-desc-btn" class="btn btn-primary mb-2">Salad</button>
+        <div class="form-group mx-sm-2 mb-2">
+          <label for="description" class="sr-only">Description</label>
+          <input type="text" class="form-control" id="description" placeholder="Desciption" style="width: 530px;">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
   <!-- Modal Additions-->
@@ -101,7 +115,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Select Additions</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Select Options</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
