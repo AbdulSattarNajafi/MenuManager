@@ -162,10 +162,13 @@
 
 .delete_category{
     background-color: red;
-    padding: 0 3px 3px 3px;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: .2rem;
+    padding: .2rem .4rem .3rem .4rem;
     vertical-align: middle;
     border-radius: 4px;
-    color: #fff;
     position: relative;
     cursor: pointer;
 }
@@ -464,6 +467,7 @@ input[type=checkbox] {
     position: absolute;
     top: 4px;
     left: .6rem;
+    color: gray;
 }
 #algen #allergen-form .form-row .upload-img .img-container img{
     position: absolute;
@@ -475,15 +479,15 @@ input[type=checkbox] {
 
 /*Allergens Descriptions*/
 #allergens{
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 #allergens .first-row{
     display: flex;
     justify-content: space-between;
 }
 #allergens .first-row .box-container{
-    width: 104px;
+    width: 88px;
     height: auto;
 }
 #allergens .first-row .box-container .img-box{
@@ -491,9 +495,10 @@ input[type=checkbox] {
 }
 #allergens .first-row .box-container p{
     margin-bottom: 0;
+    font-size: 14px;
 }
 #allergens .first-row .box-container .allergen-desc{
-    font-size: 15px;
+    font-size: 13px;
     line-height: 15px;
 }
 
@@ -508,26 +513,160 @@ input[type=checkbox] {
     border: 1px solid #ccc;
 }
 #add_stations #substation-container{
-    border: 1px solid red;
     padding-top: .4rem;
     padding-bottom: 1rem;
 }
-#add_stations #substation-container #statns-numbs .first-line{
+#add_stations #substation-container #statns-numbs .first-line, 
+#add_stations #sub-station .first-line, 
+#add_stations #stations-container #stations-numbs .first-line, 
+#add_stations #actions-wrapper .first-row{
     display: flex;
     justify-content: space-between;
     margin-bottom: .6rem;
 }
-#add_stations #substation-container #statns-numbs .first-line .subs-box{
+#add_stations #substation-container #statns-numbs .first-line .subs-box, 
+#add_stations #stations-container #stations-numbs .first-line .subs-box{
     border: 1.5px solid #ccc;
     border-radius: 4px;
     width: 9.2%;
     text-align: center;
     padding: .2rem;
-    
+    background: transparent;
 }
-#add_stations #substation-container #statns-numbs .hr-line{
-    width: 90%;
+#add_stations #substation-container #statns-numbs .first-line .active{
+    background: yellow;
+}
+#add_stations #substation-container #statns-numbs .first-line .subs-box:focus, 
+#add_stations #sub-station .first-line .station-box:focus, 
+#add_stations #actions .actions-content .first-row .act-btns:focus, 
+#add_stations #stations-container #stations-numbs .first-line .subs-box:focus,
+#add_stations #actions-container #actions-form .inputs #show-result:focus, 
+#add_stations #actions-wrapper .first-row .act-btns:focus{
+    outline: none;
+}
+#add_stations #substation-container #statns-numbs .hr-line, 
+#add_stations #sub-station .hr-line, 
+#add_stations #stations-container #stations-numbs .hr-line{
+    width: 94%;
     margin: 0 auto;
     border-top: 1.5px solid black;
-    
+}
+/*Sub station*/
+#add_stations #sub-station > .text-center, 
+#add_stations #actions > .text-center{
+    margin-bottom: 6px;
+}
+
+#add_stations #sub-station .first-line .station-box{
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    width: 6.8%;
+    text-align: center;
+    padding: .2rem;
+    background: transparent;
+}
+#add_stations #sub-station .first-line .active{
+    background: yellow;
+}
+/*Actions*/
+#add_stations #actions{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+#add_stations #actions .results-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#add_stations #actions .results-container .action-results{
+    width: 9%;
+    background: yellow;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 4px;
+}
+#add_stations #actions .results-container .action-results p{
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+#add_stations #actions .actions-content{
+    width: 74%;
+}
+#add_stations #actions .actions-content .first-row{
+    display: flex;
+    justify-content: space-between;
+}
+#add_stations #actions .actions-content .first-row .act-btns{
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    width: 9.6%;
+    text-align: center;
+    padding: .1rem 0;
+    font-size: 11px;
+}
+#add_stations #actions .actions-content .first-row .active{
+    background: yellow;
+}
+/*-------Stations--------*/
+#add_stations #stations-container{
+    padding-top: .4rem;
+    padding-bottom: 1rem;
+    display: none;
+}
+#add_stations #stations-container button, 
+#add_stations #actions-container #actions-form .btn-container .assign-btn{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/*----------Actions-----------*/
+#add_stations #actions-container{
+    padding-top: .4rem;
+    padding-bottom: 1rem;
+    display: none;
+}
+#add_stations #actions-container #actions-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#add_stations #actions-container #actions-form .btn-container{
+    width: 13%;
+}
+#add_stations #actions-container #actions-form .inputs{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+#add_stations #actions-container #actions-form .inputs #show-result{
+    width: 15%;
+    padding-left: .4rem;
+}
+#add_stations #actions-container #actions-form .inputs #description{
+    width: 84%;
+    padding-left: .4rem;
+}
+#add_stations #actions-container .saveedit-btns{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2.6rem;
+}
+#add_stations #actions-container .saveedit-btns button{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .1rem .8rem;
+}
+#add_stations #actions-wrapper{
+    margin-bottom: 2rem;
+}
+#add_stations #actions-wrapper .first-row .act-btns{
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    width: 9.6%;
+    text-align: center;
+    padding: .2rem;
+    background: transparent;
+}
+#add_stations #actions-wrapper .first-row .active{
+    background: yellow;
 }
