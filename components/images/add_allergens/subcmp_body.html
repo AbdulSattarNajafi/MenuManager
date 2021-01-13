@@ -1,62 +1,276 @@
-<div class="container head" id="add_allergens">
-<div class="row"><div class="col-sm-1"></div>
-  <div class="col-sm-9">
-    <h3 id="allergens_title">Allergens</h3>
-  </div><div class="col-sm-2"></div>
-</div>
+<div class="container head mb-5" id="add_allergens">
 
-<div class="row">
-  <div class="col-sm-2"></div>
-  <div class="col-sm-8" id="algen">
-    <div>
-      <label for="allergen-desc"><h4>Allergen Description:</h4></label>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 bg-light" id="algen">
+      <div class="general-desc mb-3">
+        <!--General Desc Form-->
+        <form id="allergen-form">
+          <div class="form-row">
+            <div class="label">
+              <h4>General Desc:</h4>
+            </div>
+              <div class="txt-area">
+                <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="General Description" spellcheck="false"></textarea>
+                <div class="btns">
+                  <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-danger">Save</button>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="hr-line mb-3"></div>
+      <!--Description Form-->
+      <div class="general-desc">
+        <form action="#" id="allergen-form">
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Name:</h4>
+            </div>
+            <div class="input">
+              <input type="text" name="name" id="name" placeholder="Allergen Name">
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Num:</h4>
+            </div>
+            <div class="input">
+              <input type="number" name="number" id="namber" placeholder="4">
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Image:</h4>
+            </div>
+              <div class="upload-img">
+                <div class="img-container">
+                  <input type="file" name="image" id="file-input">
+                  <p>Upload Image</p>
+                  <img src="assets/img/fish.png" alt="fish image">
+                </div>
+              </div>
+           </div>
+          <div class="form-row">
+            <div class="label">
+              <h4>Description:</h4>
+            </div>
+            <div class="txt-area">
+              <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="Specific Description" spellcheck="false"></textarea>
+              <div class="btns">
+                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-danger">Save</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div id="txt-arr">
-      <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="40" placeholder="Specific Description" spellcheck="false"></textarea>
-    </div>
+    <div class="col-sm-2"></div>
   </div>
-  <div class="col-sm-2"></div>
-</div>
 
-<div class="row">
-  <div class="col-sm-2"></div>
-  <div class="col-sm-8">
-    <form action="#" id="allergen-form">
-      <div class="flex">
-        <div>
-          <label for="prawns"><h4>Allergen Name:</h4></label>
+  <div class="row mt-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" id="allergens">
+      <!--Allergens Row-1-->
+      <div class="first-row mb-3">
+        <!--Allergen-1-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 1</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
         </div>
-      <div class="inpt">
-        <input class="form-control dyn-input" type="text" id="prawns" name="prawns" placeholder="Prawns">
+        <!--Allergen-2-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 2</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-3-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 3</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-4-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 4</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-5-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 5</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-6-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 6</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-7-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 7</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-8-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 8</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+      </div>
+      <!--Allergens Row-2-->
+      <div class="first-row mb-2">
+        <!--Allergen-9-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 9</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-10-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 10</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-11-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 11</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-12-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 12</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-13-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 13</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-14-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 14</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-15-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 15</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
+        <!--Allergen-16-->
+        <div class="box-container">
+          <div class="img-box">
+            <img src="assets/img/fish.png" class="img-fluid" alt="fish Image">
+          </div>
+          <p class="text-center allergen-num">Allergen 16</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+          <p class="allergen-desc">morbi tristique</p>
+        </div>
       </div>
     </div>
-    <div class="flex">
-      <div>
-        <label for="allergen-desc"><h4>Allergen Description:</h4></label>
-      </div>
-      <div id="txt-arr">
-        <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="Specific Description" spellcheck="false"></textarea>
-      </div>
-    </div>
-      <div class="flex mt-3">
-        <div>
-          <label for="allergen-num"><h4>Allergen Number:</h4></label>
-        </div>
-        <div id="txt-arr" class="inpt">
-          <input type="number" id="allergen-num" name="allergen-num" placeholder="4">
-        </div>
-      </div>
-      <div class="flex">
-        <div>
-          <label for="allergen-img"><h4>Allergen Image:</h4></label>
-        </div>
-        <div id="upload-img">
-          <div id="allergen-img">Upload Image</div>
-        </div>
-      </div>
-      
-    </form>
+    <div class="col-sm-1"></div>
   </div>
-  <div class="col-sm-2"></div>
-</div>
-</div>

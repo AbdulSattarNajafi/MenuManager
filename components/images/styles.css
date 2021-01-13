@@ -402,75 +402,132 @@ input[type=checkbox] {
 
 #algen{
     width: 100%;
+    padding: 1rem 1rem;
+}
+
+#algen .hr-line{
+    border-top: 1px solid black;
+}
+#algen #allergen-form .form-row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid black;
+}
+#algen #allergen-form .form-row .label{
+    text-align: right;
+    width: 22%;
+}
+#algen #allergen-form .form-row .txt-area{
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#algen #allergen-form .form-row .input{
+    width: 73%;
+}
+#algen #allergen-form .form-row .input input{
+    padding: .4rem;
+    width: 72%;
+}
+#algen #allergen-form .form-row .txt-area textarea{
+    width: 72%;
+}
+#algen #allergen-form .form-row .txt-area .btns{
+    width: 24%;
+    display: flex;
+    justify-content: flex-end;
+}
+#algen #allergen-form .form-row .txt-area .btns .btn-danger{
+    margin-left: 1rem;
+}
+#algen #allergen-form .form-row .upload-img{
+    width: 73%;
+    height: 120px;
+}
+#algen #allergen-form .form-row .upload-img .img-container{
+    width: 72%;
+    height: 100%;
+    border: 1px solid gray;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    
+}
+#algen #allergen-form .form-row .upload-img #file-input{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+}
+#algen #allergen-form .form-row .upload-img .img-container p{
+    position: absolute;
+    top: 4px;
+    left: .6rem;
+}
+#algen #allergen-form .form-row .upload-img .img-container img{
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    width: 200px;
+    height: 120px;
+}
+
+/*Allergens Descriptions*/
+#allergens{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+#allergens .first-row{
+    display: flex;
+    justify-content: space-between;
+}
+#allergens .first-row .box-container{
+    width: 104px;
+    height: auto;
+}
+#allergens .first-row .box-container .img-box{
+    border: 1px solid gray;
+}
+#allergens .first-row .box-container p{
+    margin-bottom: 0;
+}
+#allergens .first-row .box-container .allergen-desc{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+/*Styling For Stations*/
+#add_stations .container #stations-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#add_stations .container #stations-header button{
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+}
+#add_stations #substation-container{
+    border: 1px solid red;
+    padding-top: .4rem;
     padding-bottom: 1rem;
-  }
-  #algen #txt-arr{
-    width: 62%;
-  }
-  #algen #txt-arr textarea{
-    width: 100%;
-    height: 30;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 1rem;
-    padding-top: .7rem;
-    font-weight: 550;
-    margin-bottom: 0 1rem;
-    resize: none;
-    overflow: hidden;
-  }
-  
-  /*Allergen Form*/
-  #allergen-form{
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 4rem;
-  }
-  #allergen-form .flex{
+}
+#add_stations #substation-container #statns-numbs .first-line{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-  #allergen-form .flex .inpt{
-    width: 62%;
-  }
-  #allergen-form .flex .inpt input{
-    width: 100%;
-    height: 46px;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    padding: 0 1rem ;
-    font-size: 1.6rem;
-  }
-  #allergen-form .flex #upload-img,
-  #allergen-form .flex #txt-arr{
-    width: 62%;
-  }
-  #allergen-form .flex #upload-img #allergen-img{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 8px;
-    height: 160px;
-    padding: 1rem;
-    font-size: 1.6rem;
-    color: gray;
-    margin-bottom: 1rem;
-  }
-  #allergen-form .flex #txt-arr textarea{
-    width: 100%;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 1rem;
-    padding-top: .7rem;
-    font-weight: 550;
-    margin-bottom: 0 1rem;
-    resize: none;
-    overflow: hidden;
-  }
+    margin-bottom: .6rem;
+}
+#add_stations #substation-container #statns-numbs .first-line .subs-box{
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    width: 9.2%;
+    text-align: center;
+    padding: .2rem;
+    
+}
+#add_stations #substation-container #statns-numbs .hr-line{
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1.5px solid black;
+    
+}
