@@ -133,18 +133,7 @@ function thirdTabActionBtns() {
     node.addEventListener('click', handleClick)
   });
 };
-//function for adding the buttons value to the input
 thirdTabActionBtns();
-function addingValue() {
-  const actionBtns = document.querySelectorAll('.actionbtn');
-  actionBtns.forEach(actionBtn => {
-    actionBtn.addEventListener('click', (e) => {
-      let currentBtn = e.currentTarget.value;
-      document.querySelector('#show-result').value = currentBtn;
-    });
-  });
-}
-addingValue();
 //Creating Station
 function createStation() {
   const createBtn = document.querySelector('#create_station');

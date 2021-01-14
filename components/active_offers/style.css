@@ -1,9 +1,95 @@
-/*
-    Active Offers CSS
-*/
+/*-------------Offer Lists-------------*/
+#list-data{
+    margin-top: 20px;
+    margin-bottom: 3rem;
+}
+#list-data .list-offers{
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+}
+#list-data .list-offers .list-title,
+#list-data #activate-offer .activate-offer-title{
+    text-align: center;
+    font-size: 14pt;
+    padding: 8px 10px 10px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+#list-data .list-offers .list-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#list-data .list-offers .list-links .list-links-item{
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    padding: 4px 10px 8px 12px;
+    margin-bottom: .4rem;
+    transition: all .5s ease;
+}
+#list-data .list-offers .list-links .list-links-item a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s ease;
+}
+#list-data .list-offers .list-links .selected, 
+#list-data .list-offers .list-links .list-links-item:hover{
+    background:rgb(0, 123, 255);
+}
+#list-data .list-offers .list-links .selected a{
+    color: #fff;
+}
+#list-data .list-offers .list-links .list-links-item:hover a{
+    color: #fff;
+}
+/*Middle Content*/
+#list-data #activate-offer #activate-toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ffa64d;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: #ffd9b3;
+    padding: .1rem .6rem;
+}
+#list-data #activate-offer #activate-toggle .bold-text{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#list-data #activate-offer #activate-toggle .offer-amount{
+    font-style: italic;
+    font-style: 16px;
+    font-weight: 500;
+}
+#list-data #activate-offer #inputs-wrapper{
+    width: 100%;
+    margin: auto;
+    margin-top: .6rem;
+    padding: .2rem 0 .2rem .1rem;
+}
+#list-data #activate-offer #inputs-wrapper .inputs-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+    width: 100%;
+}
+#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-label{
+    width: 47%;
+    font-weight: 600;
+}
+#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-container{
+    width: 53%;
+}
+#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
+    width: 100%;
+}
+/*-------------Daily Offers-------------*/
 #list_active_offers{
     margin-top:20px;
 }
+
 #list_active_offers ul li{
     border: 2px solid #ccc;
     border-radius: 4px;
