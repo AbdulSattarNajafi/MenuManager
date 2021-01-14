@@ -44,3 +44,93 @@ function displayStationContent() {
 };
 displayStationContent();
 //Substations Buttons
+function subStationBtns() {
+let btns = Array.from(document.querySelectorAll('.subs-box'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+};
+subStationBtns();
+//Substation second row buttons
+function stationsBtns() {
+let btns = Array.from(document.querySelectorAll('.station-box'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+};
+stationsBtns();
+//Action Buttons
+function actionBtns() {
+  let btns = Array.from(document.querySelectorAll('.act-btns'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+};
+actionBtns();
+//Stations Buttons for second Tab
+function secondTabStationBtns() {
+  let btns = Array.from(document.querySelectorAll('.subs-btns'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+};
+secondTabStationBtns();
+//Action Buttons for third Tab
+function thirdTabActionBtns() {
+  let btns = Array.from(document.querySelectorAll('.actionbtn'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+};
+//function for adding the buttons value to the input
+thirdTabActionBtns();
+function addingValue() {
+  const actionBtns = document.querySelectorAll('.actionbtn');
+  actionBtns.forEach(actionBtn => {
+    actionBtn.addEventListener('click', (e) => {
+      let currentBtn = e.currentTarget.value;
+      document.querySelector('#show-result').value = currentBtn;
+    });
+  });
+}
+addingValue();

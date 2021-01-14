@@ -525,7 +525,7 @@ input[type=checkbox] {
     margin-bottom: .6rem;
 }
 #add_stations #substation-container #statns-numbs .first-line .subs-box, 
-#add_stations #stations-container #stations-numbs .first-line .subs-box{
+#add_stations #stations-container #stations-numbs .first-line .subs-btns{
     border: 1.5px solid #ccc;
     border-radius: 4px;
     width: 9.2%;
@@ -533,15 +533,16 @@ input[type=checkbox] {
     padding: .2rem;
     background: transparent;
 }
-#add_stations #substation-container #statns-numbs .first-line .active{
+#add_stations #substation-container #statns-numbs .first-line .active, 
+#add_stations #stations-container #stations-numbs .first-line .active{
     background: yellow;
 }
 #add_stations #substation-container #statns-numbs .first-line .subs-box:focus, 
 #add_stations #sub-station .first-line .station-box:focus, 
 #add_stations #actions .actions-content .first-row .act-btns:focus, 
-#add_stations #stations-container #stations-numbs .first-line .subs-box:focus,
+#add_stations #stations-container #stations-numbs .first-line .subs-btns:focus,
 #add_stations #actions-container #actions-form .inputs #show-result:focus, 
-#add_stations #actions-wrapper .first-row .act-btns:focus{
+#add_stations #actions-wrapper .first-row .actionbtn:focus{
     outline: none;
 }
 #add_stations #substation-container #statns-numbs .hr-line, 
@@ -639,11 +640,11 @@ input[type=checkbox] {
     justify-content: space-between;
 }
 #add_stations #actions-container #actions-form .inputs #show-result{
-    width: 15%;
+    width: 12%;
     padding-left: .4rem;
 }
 #add_stations #actions-container #actions-form .inputs #description{
-    width: 84%;
+    width: 87%;
     padding-left: .4rem;
 }
 #add_stations #actions-container .saveedit-btns{
@@ -654,12 +655,12 @@ input[type=checkbox] {
 #add_stations #actions-container .saveedit-btns button{
     border: 1px solid gray;
     border-radius: 5px;
-    padding: .1rem .8rem;
+    padding: .1rem .8rem .2rem .8rem;
 }
 #add_stations #actions-wrapper{
     margin-bottom: 2rem;
 }
-#add_stations #actions-wrapper .first-row .act-btns{
+#add_stations #actions-wrapper .first-row .actionbtn{
     border: 1.5px solid #ccc;
     border-radius: 4px;
     width: 9.6%;
