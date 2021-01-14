@@ -75,6 +75,17 @@ let btns = Array.from(document.querySelectorAll('.station-box'));
   });
 };
 stationsBtns();
+//Show Substation
+function showSubstation() {
+  const subBTns = document.querySelectorAll('.subs-box');
+  const subContainer = document.querySelector('.sub_wrapper');
+  subBTns.forEach(subBTn => {
+    subBTn.addEventListener('click', () => {
+      subContainer.classList.add('sub_show');
+    })
+  })
+};
+showSubstation();
 //Action Buttons
 function actionBtns() {
   let btns = Array.from(document.querySelectorAll('.act-btns'));
@@ -134,3 +145,14 @@ function addingValue() {
   });
 }
 addingValue();
+//Creating Station
+function createStation() {
+  const createBtn = document.querySelector('#create_station');
+  const container = document.querySelector('#stations-numbs');
+  let row = `<div class="first-line"></div>`;
+  let btn = `<button type="button" class="subs-btns">Station 1</button>`
+  createBtn.addEventListener('click', () => {
+    container.appendChild(btn);
+    row.appendChild(btn);
+  })
+}

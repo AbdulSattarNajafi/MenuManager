@@ -438,8 +438,13 @@ input[type=checkbox] {
 #algen #allergen-form .form-row .txt-area .btns{
     width: 24%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
+#algen #allergen-form .form-row .txt-area .btns button{
+    border-radius: 4px;
+    padding: .1rem .8rem .2rem .8rem;
+}
+
 #algen #allergen-form .form-row .txt-area .btns .btn-danger{
     margin-left: 1rem;
 }
@@ -553,6 +558,14 @@ input[type=checkbox] {
     border-top: 1.5px solid black;
 }
 /*Sub station*/
+#add_stations .sub_wrapper{
+    overflow: hidden;
+    height: 0;
+    transition: all .6s ease-out;
+}
+#add_stations .sub_show{
+    height: 122px;
+}
 #add_stations #sub-station > .text-center, 
 #add_stations #actions > .text-center{
     margin-bottom: 6px;
@@ -574,6 +587,10 @@ input[type=checkbox] {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 1rem;
+}
+#add_stations #actions .sub-btns-container{
+    display: flex;
+    justify-content: flex-end;
 }
 #add_stations #actions .results-container{
     display: flex;
@@ -652,9 +669,9 @@ input[type=checkbox] {
     justify-content: flex-end;
     padding-right: 2.6rem;
 }
-#add_stations #actions-container .saveedit-btns button{
-    border: 1px solid gray;
-    border-radius: 5px;
+#add_stations #actions-container .saveedit-btns button,
+#add_stations #actions .sub-btns-container button{
+    border-radius: 4px;
     padding: .1rem .8rem .2rem .8rem;
 }
 #add_stations #actions-wrapper{
