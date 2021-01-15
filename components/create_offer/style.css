@@ -6,7 +6,7 @@ a{
 }
 #create_button_row{
     margin-top: 20px;
-    padding-left: 25px;
+    padding-left: 1.6rem;
 }
 #create_button_row button{
     border: solid 2px #ccc;
@@ -22,6 +22,7 @@ a{
 
 #create_filldata{
     padding:20px 0;
+    margin-bottom: 2rem;
 }
 .daily_offer_title{
     border-radius: 5px;
@@ -93,29 +94,40 @@ a{
 /*
     Fill data
 */
-#list_filldata_titles li{
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    transition: all .3s;
-    cursor: pointer;
+#list_filldata{
+    margin-top: 20px;
 }
-#list_filldata_titles li a{
+#list_filldata_titles{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+#list_filldata_titles .list-group{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#list_filldata_titles .list-group .list-group-item{
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    padding: 4px 10px 8px 12px;
+    margin-bottom: .4rem;
+    transition: all .5s ease;
+}
+#list_filldata_titles .list-group li a{
     text-decoration: none;
     color: black;
-    transition: all .3s;
+    transition: all .5s ease;
 }
-#list_filldata_titles li .active{
+#list_filldata_titles .list-group li .active{
     color: #fff;
 }
-#list_filldata_titles li:hover{
+#list_filldata_titles .list-group li:hover{
     background-color:#007bff;  
 }
-#list_filldata_titles li:hover a{
+#list_filldata_titles .list-group li:hover a{
     color: #fff;
 }
-#list_filldata{
-    margin-top:20px
-}
+
 
 
 

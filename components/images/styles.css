@@ -521,9 +521,19 @@ input[type=checkbox] {
     padding-top: .4rem;
     padding-bottom: 1rem;
 }
+#add_stations #stations-container{
+    margin-bottom: 3rem;
+}
+#add_stations #stations-container #stations-numbs .first-line{
+    display: flex;
+    flex-flow: row wrap;
+}
+#add_stations #stations-container #stations-numbs .first-line .subs-btns{
+    margin-bottom: .5rem;
+    margin-right: .45rem;
+}
 #add_stations #substation-container #statns-numbs .first-line, 
 #add_stations #sub-station .first-line, 
-#add_stations #stations-container #stations-numbs .first-line, 
 #add_stations #actions-wrapper .first-row{
     display: flex;
     justify-content: space-between;

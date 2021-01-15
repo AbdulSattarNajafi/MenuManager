@@ -6,56 +6,52 @@
 </div>
 <!-- / Collapse -->
 
-<div class="container" id="list_active_offers">
+<div class="container" id="daily_active_offers">
 
   <div class="row">
-    <div class="col-sm-4" id="section_offers">
-      <h4 class="activeoffers-section-title" style="margin-left: 14px;">Daily Offers</h4>
-      <ul class="list-group" style="margin-left: 14px;">
-        <li class="list-group-item selected mb-2"><a href="#" class="active" style="margin-left: -50px;">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
-        <li class="list-group-item mb-2"><a href="#" style="margin-left: -50px;">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
-        <li class="list-group-item mb-2"><a href="#" style="margin-left: -50px;">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
+    <div class="col-sm-4 list-offers">
+      <h4 class="list-title">Daily Offers</h4>
+      <ul class="list-links">
       </ul>
     </div>
 
-    <div class="col-sm-4" id="selected_offer">
-      <h4 class="activeoffers-section-title">Activate / Deactivate Offer</h4>
-      <div class="row" id="active-toggle">
-        <div class="col-sm-5 active-toggle-title" style="position: relative;">Daily Offer 1</div>
-        <div class="col-sm-7 text-right" id="btn-with-eys">
-          <button class="btn btn-danger" id="btn-with-x">Deactivate <i class="fa fa-close"></i></button>
-            <button class="btn btn-warning btn-sm"> <i class="fa fa-eye"></i></button>
+    <div class="col-sm-4" id="activate-offer">
+      <h4 class="activate-offer-title">Activate / Deactivate Offer</h4>
+      <div class="row" id="activate-toggle">
+        <div>
+          <p class="bold-text">Daily Offer 1</p>
+          <p class="bold-text">Alternative Name</p>
+        </div>
+        <div class="btns-container">
+          <button type="button" class="activate-btn">deActivate</button>
+          <button type="button" class="eye-btn"><i class="fa fa-eye"></i></button>
         </div>
       </div>
-      <div class="row active_data_row">
-        <div class="col-sm-5">Start Date & Time</div>
-        <div class="col-sm-7 text-right input-options date">
+
+      <div id="inputs-wrapper">
+      <div class="inputs-row">
+        <div class="inputs-label">Start Date & Time</div>
+        <div class="inputs-container date">
           <input type="text" class="form-control" placeholder="" id="start_date_time">
         </div>
       </div>
-      <div class="row active_data_row">
-        <div class="col-sm-5">End Date & Time</div>
-        <div class="col-sm-7 text-right input-options date">
+      <div class="inputs-row">
+        <div class="inputs-label">End Date & Time</div>
+        <div class="inputs-container date">
           <input type="text" class="form-control" placeholder="" id="end_date_time">
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">Price</div>
-        <div class="col-sm-7 text-right input-options">
-          <input type="text" class="form-control" placeholder="" id="Price">
+      <div class="inputs-row">
+        <div class="inputs-label">Price</div>
+        <div class="inputs-container">
+          <input type="number" class="form-control text-center" placeholder="" id="Price">
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">Email Offer</div>
-        <div class="col-sm-7 text-right input-options">
+      <div class="inputs-row">
+        <div class="inputs-label">Email Offer</div>
+        <div class="inputs-container">
           <select class="form-control">
             <option selected>No</option>
             <option selected>Yes</option>
@@ -63,16 +59,16 @@
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">Email Date</div>
-        <div class="col-sm-7 text-right input-options date date_time">
+      <div class="inputs-row">
+        <div class="inputs-label">Email Date</div>
+        <div class="inputs-container date">
           <input type="text" class="form-control" placeholder="" id="email_date">
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">SMS Offer</div>
-        <div class="col-sm-7 text-right input-options">
+      <div class="inputs-row">
+        <div class="inputs-label">SMS Offer</div>
+        <div class="inputs-container">
           <select class="form-control">
             <option selected>No</option>
             <option selected>Yes</option>
@@ -80,16 +76,16 @@
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">SMS Date & Time</div>
-        <div class="col-sm-7 text-right input-options date date_time">
+      <div class="inputs-row">
+        <div class="inputs-label">SMS Date & Time</div>
+        <div class="inputs-container date">
           <input type="text" class="form-control" placeholder="" id="sms_date">
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">Notify Offer</div>
-        <div class="col-sm-7 text-right input-options">
+      <div class="inputs-row">
+        <div class="inputs-label">Notify App</div>
+        <div class="inputs-container">
           <select class="form-control">
             <option selected>No</option>
             <option selected>Yes</option>
@@ -97,29 +93,41 @@
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">Notify Date & Time</div>
-        <div class="col-sm-7 text-right input-options date date_time">
+      <div class="inputs-row">
+        <div class="inputs-label">Notify Date & Time</div>
+        <div class="inputs-container date">
           <input type="text" class="form-control" placeholder="" id="sms_date">
         </div>
       </div>
 
-      <div class="row active_data_row">
-        <div class="col-sm-5">UON</div>
-        <div class="col-sm-7 text-right input-options">
+      <div class="inputs-row">
+        <div class="inputs-label">Start Date Facebook</div>
+        <div class="inputs-container date">
+          <input type="text" class="form-control" placeholder="" id="fcbok_date">
+        </div>
+      </div>
+
+      <div class="inputs-row">
+        <div class="inputs-label">End Date Facebook</div>
+        <div class="inputs-container date">
+          <input type="text" class="form-control" placeholder="" id="fcbok_date">
+        </div>
+      </div>
+
+      <div class="inputs-row">
+        <div class="inputs-label">UON</div>
+        <div class="inputs-container">
           <input type="text" class="form-control" placeholder="UON" id="UON">
         </div>
       </div>
+    </div>
 
     </div>
 
-    <div class="col-sm-4" id="active_offers">
-      <h4 class="activeoffers-section-title">Active Offers</h4>
-      <ul class="list-group">
-        <li class="list-group-item mb-2"><a href="#">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
-        <li class="list-group-item mb-2"><a href="#">
+    <div class="col-sm-4 list-offers">
+      <h4 class="list-title">Active Offers</h4>
+      <ul class="list-links">
+        <li class="list-links-item selected"><a href="#">
           Daily Offer 1 [Alternative Name]
         </a></li>
       </ul>

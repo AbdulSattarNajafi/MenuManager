@@ -134,14 +134,22 @@ function thirdTabActionBtns() {
   });
 };
 thirdTabActionBtns();
-//Creating Station
+
+//Creating Station buttons
 function createStation() {
   const createBtn = document.querySelector('#create_station');
   const container = document.querySelector('#stations-numbs');
-  let row = `<div class="first-line"></div>`;
-  let btn = `<button type="button" class="subs-btns">Station 1</button>`
+  let row = document.createElement('div');
+    row.classList.add('first-line');
+    
+    let count = 0;
   createBtn.addEventListener('click', () => {
-    container.appendChild(btn);
-    row.appendChild(btn);
+    count += 1;
+    newBtn = document.createElement('button');
+    newBtn.classList.add('subs-btns');
+    newBtn.innerHTML = `Station ${count}`;
+    row.appendChild(newBtn);
+    container.prepend(row)
   })
-}
+};
+createStation();

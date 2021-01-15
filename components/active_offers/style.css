@@ -1,171 +1,125 @@
+/* Sub Heading Buttons*/
+#create_offer .bordered_nav .orange-btn{
+    background-color:  #ff9933;
+}
+#create_offer .bordered_nav .pink-btn{
+    background-color:#ffccff;
+}
+#create_offer .bordered_nav .yellow-btn{
+    background-color: yellow;
+}
 /*-------------Offer Lists-------------*/
-#list-data{
+#list-data,
+#daily_active_offers{
     margin-top: 20px;
     margin-bottom: 3rem;
 }
-#list-data .list-offers{
+#list-data .list-offers,
+#daily_active_offers .list-offers{
     padding-right: 1.6rem;
     padding-left: 1.6rem;
 }
-#list-data .list-offers .list-title,
-#list-data #activate-offer .activate-offer-title{
+.list-offers .list-title,
+#activate-offer .activate-offer-title{
     text-align: center;
     font-size: 14pt;
     padding: 8px 10px 10px 10px;
     background-color: #eee;
     border-radius: 5px;
 }
-#list-data .list-offers .list-links{
+.list-offers .list-links{
     padding: 0;
     margin: 0;
     list-style: none;
 }
-#list-data .list-offers .list-links .list-links-item{
+.list-offers .list-links .list-links-item{
     border: 1.5px solid #eee;
     border-radius: 5px;
     padding: 4px 10px 8px 12px;
     margin-bottom: .4rem;
     transition: all .5s ease;
 }
-#list-data .list-offers .list-links .list-links-item a{
+.list-offers .list-links .list-links-item a{
     text-decoration: none;
     color: black;
     transition: all .5s ease;
 }
-#list-data .list-offers .list-links .selected, 
-#list-data .list-offers .list-links .list-links-item:hover{
+.list-offers .list-links .selected,
+.list-offers .list-links .list-links-item:hover{
     background:rgb(0, 123, 255);
 }
-#list-data .list-offers .list-links .selected a{
+.list-offers .list-links .selected > a{
     color: #fff;
 }
-#list-data .list-offers .list-links .list-links-item:hover a{
+.list-offers .list-links .list-links-item:hover a{
     color: #fff;
 }
 /*Middle Content*/
-#list-data #activate-offer #activate-toggle{
+#activate-offer #activate-toggle{
     display: flex;
     justify-content: space-between;
-    border: 2px solid #ffa64d;
+    border: 3px solid #ffa64d;
     border-radius: 5px;
     width: 100%;
     margin: auto;
     background: #ffd9b3;
     padding: .1rem .6rem;
 }
-#list-data #activate-offer #activate-toggle .bold-text{
+#activate-offer #activate-toggle .bold-text{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
 }
-#list-data #activate-offer #activate-toggle .offer-amount{
+#activate-offer #activate-toggle .offer-amount{
     font-style: italic;
     font-style: 16px;
     font-weight: 500;
 }
-#list-data #activate-offer #inputs-wrapper{
+#activate-offer #activate-toggle .btns-container{
+    display: flex;
+    align-items: center;
+}
+#activate-offer #activate-toggle .btns-container .activate-btn{
+    border: none;
+    outline: none;
+    background: red;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    padding: 0  8px 2px 8px;
+}
+#activate-offer #activate-toggle .btns-container .eye-btn{
+    border: none;
+    outline: none;
+    border: 1.5px solid #ffc107;
+    border-radius: 4px;
+    background: #ffc107;
+}
+#activate-offer #inputs-wrapper{
     width: 100%;
     margin: auto;
     margin-top: .6rem;
     padding: .2rem 0 .2rem .1rem;
 }
-#list-data #activate-offer #inputs-wrapper .inputs-row{
+#activate-offer #inputs-wrapper .inputs-row{
     display: flex;
     justify-content: space-between;
     margin-bottom: .4rem;
     width: 100%;
 }
-#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-label{
+#activate-offer #inputs-wrapper .inputs-row .inputs-label{
     width: 47%;
     font-weight: 600;
 }
-#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-container{
+#activate-offer #inputs-wrapper .inputs-row .inputs-container{
     width: 53%;
 }
-#list-data #activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
+ #activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
     width: 100%;
 }
 /*-------------Daily Offers-------------*/
-#list_active_offers{
-    margin-top:20px;
-}
 
-#list_active_offers ul li{
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .4s;
-}
-#list_active_offers ul li:hover{
-    background-color: #007bff;
-}
-#list_active_offers ul li a{
-    text-decoration: none;
-    color: black;
-    transition: all .4s;
-}
-#list_active_offers ul li:hover a{
-    color: #fff;
-}
 
-.activeoffers-section-title{
-    text-align: center;
-    font-size: 14pt;
-    padding:10px;
-    background-color: #eee;
-    border-radius: 5px;
-}
-.active-toggle-title{
-    padding:5px;
-}
-#btn-with-eys{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -6px;
-    margin-bottom: 0;
-    height: 47px;
-}
-#btn-with-eys button{
-    display: inline-block;
-    position: absolute;
-    right: 12px;
-    bottom: 9px;
-    padding-top: 0;
-    padding-bottom: 2px;
-}
-#btn-with-x{
-    margin-right: 33px;
-    width: 118px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#active-toggle{
-    padding:5px 0px;
-    margin-left:0px;
-    margin-right:0px;
-    background-color: #cfc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-.selected_offer{
-    margin:0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-.active_data_row{
-    padding: 0 0;
-    margin: 2px 0;
-    color: #666;
-}
-
-.active_data_row div{
-    vertical-align: middle;
-}
-
-.active_data_row .col-sm-5{
-    padding: 0 0;
-    color: #000;
-    font-weight: 600;
-}
