@@ -120,6 +120,9 @@
  #activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
     width: 100%;
 }
+#activate-offer #inputs-wrapper .inputs-row .date input{
+    font-style: italic;
+}
 /*-------------Daily Offers-------------*/
 
 
