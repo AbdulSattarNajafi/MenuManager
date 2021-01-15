@@ -1,12 +1,12 @@
 /* Sub Heading Buttons*/
 #create_offer .bordered_nav .orange-btn{
-    background-color:  #ff9933;
+    background-color:  #F79C1A;
 }
 #create_offer .bordered_nav .pink-btn{
-    background-color:#ffccff;
+    background-color:#FACEFF;
 }
 #create_offer .bordered_nav .yellow-btn{
-    background-color: yellow;
+    background-color: #FFF000;
 }
 /*-------------Offer Lists-------------*/
 #list-data,
@@ -122,6 +122,7 @@
 }
 #activate-offer #inputs-wrapper .inputs-row .date input{
     font-style: italic;
+    font-weight: 600;
 }
 /*-------------Daily Offers-------------*/
 
