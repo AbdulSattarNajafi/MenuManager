@@ -35,3 +35,23 @@
     $('.bordered_nav .sec_btn').removeClass('pink-btn');
     $('.bordered_nav .sec_btn').addClass('btn-light');
   });
+
+//Slider
+var owl = $('#subnav-slide-btns .btns-slider-container');
+owl.owlCarousel({
+  rtl:true,
+  autoWidth:true,
+  items:5,
+  center:true,
+  URLhashListener:true,
+  autoplayHoverPause:true,
+  startPosition: 'URLHash'
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});

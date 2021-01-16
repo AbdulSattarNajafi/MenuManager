@@ -138,18 +138,32 @@ thirdTabActionBtns();
 //Creating Station buttons
 function createStation() {
   const createBtn = document.querySelector('#create_station');
-  const container = document.querySelector('#stations-numbs');
-  let row = document.createElement('div');
-    row.classList.add('first-line');
+  const container = document.querySelector('#btn-create-container');
     
     let count = 0;
+    let attr;
   createBtn.addEventListener('click', () => {
     count += 1;
+    attr = document.createAttribute('type');
+    attr.value = 'button';
     newBtn = document.createElement('button');
     newBtn.classList.add('subs-btns');
+    newBtn.setAttributeNode(attr);
     newBtn.innerHTML = `Station ${count}`;
-    row.appendChild(newBtn);
-    container.prepend(row)
-  })
+    container.appendChild(newBtn);
+
+    let btns = Array.from(container.querySelectorAll('.subs-btns'));
+  const handleClick = (e) => {
+    e.preventDefault();
+    btns.forEach(node => {
+      node.classList.remove('active');
+    });
+    e.currentTarget.classList.toggle('active');
+  }
+  btns.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
+});
+  
 };
 createStation();

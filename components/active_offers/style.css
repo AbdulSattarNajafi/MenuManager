@@ -1,3 +1,20 @@
+/*Sub Nav Slider*/
+#subnav-slide-btns{
+    display: flex;
+}
+#subnav-slide-btns .btns-slider-container{
+    border: 1px solid blue;
+    width: 100%;
+    padding: .2rem .4rem;
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+#subnav-slide-btns .btns-slider-container .slide-item{
+    min-width: 125px;
+}
+
+
 /* Sub Heading Buttons*/
 #create_offer .bordered_nav .orange-btn{
     background-color:  #F79C1A;
@@ -53,6 +70,9 @@
 }
 .list-offers .list-links .list-links-item:hover a{
     color: #fff;
+}
+.list-offers .list-links .disselect{
+    background: transparent;
 }
 /*Middle Content*/
 #activate-offer #activate-toggle{
