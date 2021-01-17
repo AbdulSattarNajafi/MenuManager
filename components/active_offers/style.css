@@ -1,20 +1,49 @@
 /*Sub Nav Slider*/
 #subnav-slide-btns{
     display: flex;
-}
-#subnav-slide-btns .btns-slider-container{
-    border: 1px solid blue;
+    flex-flow: row nowrap;
     width: 100%;
-    padding: .2rem .4rem;
+}
+#subnav-slide-btns .list-btn{
     position: relative;
-    display: flex;
-    overflow-x: hidden;
+    padding-left: 1.6rem;
+    width: 12%;
 }
-#subnav-slide-btns .btns-slider-container .slide-item{
-    min-width: 125px;
+#subnav-slide-btns .slide-prev{
+    position: relative;
+    width: 4%;
 }
-
-
+#subnav-slide-btns .owl-carousel{
+    position: relative;
+    width: 84%;
+}
+#subnav-slide-btns .owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    top: -5px;
+    left: -53px;
+    outline: none;
+    width: 38px;
+    height: 38px;
+    background:#007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#subnav-slide-btns .owl-carousel .owl-nav .owl-prev i{
+    margin-right: 4px;
+}
+#subnav-slide-btns .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top:-5px;
+    right: -52px;
+    outline: none;
+    width: 38px;
+    height: 37px;
+    background:#007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+}
 /* Sub Heading Buttons*/
 #create_offer .bordered_nav .orange-btn{
     background-color:  #F79C1A;
@@ -71,9 +100,7 @@
 .list-offers .list-links .list-links-item:hover a{
     color: #fff;
 }
-.list-offers .list-links .disselect{
-    background: transparent;
-}
+
 /*Middle Content*/
 #activate-offer #activate-toggle{
     display: flex;

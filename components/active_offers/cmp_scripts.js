@@ -37,21 +37,18 @@
   });
 
 //Slider
-var owl = $('#subnav-slide-btns .btns-slider-container');
-owl.owlCarousel({
-  rtl:true,
-  autoWidth:true,
-  items:5,
-  center:true,
-  URLhashListener:true,
-  autoplayHoverPause:true,
-  startPosition: 'URLHash'
-});
-owl.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
+
+
+$(document).ready(function(){
+  $(' .owl-carousel').owlCarousel({
+    autoWidht:true,
+    loop:false,
+    rtl:true,
+    nav:true,
+    dots:false,
+    items:7,
+    margin:4,
+  });
+   $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+   $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 });

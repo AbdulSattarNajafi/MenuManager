@@ -118,7 +118,7 @@ a{
     color: black;
     transition: all .5s ease;
 }
-#list_filldata_titles .list-group li .active{
+#list_filldata_titles .list-group .selected a{
     color: #fff;
 }
 #list_filldata_titles .list-group li:hover{

@@ -11,7 +11,7 @@ function  subcmp_on_load() {
 /**
  * Sub component navigation from a subcomponent itself
  */
-$('.appbody_nav button').unbind('click').click(function(e) {
+$('.appbody_nav .appbtn_nav').unbind('click').click(function(e) {
     e.stopPropagation();
     const subcmp_target = $(this).attr('subcmp_target');
     const subcmp_parentcmp = $(this).attr('subcmp_parentcmp');
