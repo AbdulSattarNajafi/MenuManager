@@ -37,8 +37,6 @@
   });
 
 //Slider
-
-
 $(document).ready(function(){
   $(' .owl-carousel').owlCarousel({
     autoWidht:true,

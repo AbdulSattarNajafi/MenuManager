@@ -1,6 +1,56 @@
 /*
     Create New Common CSS
 */
+/*Sub Nav Slider*/
+.appbody_nav{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.appbody_nav .list-btn{
+    position: relative;
+    padding-left: 1.6rem;
+    width: 12%;
+}
+.appbody_nav .slide-prev{
+    position: relative;
+    width: 4%;
+}
+.appbody_nav .owl-carousel{
+    position: relative;
+    width: 84%;
+}
+.appbody_nav .owl-carousel .owl-nav .owl-prev{
+    position: absolute;
+    top: -5px;
+    left: -53px;
+    outline: none;
+    width: 38px;
+    height: 38px;
+    background:#007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.appbody_nav .owl-carousel .owl-nav .owl-prev i{
+    margin-right: 4px;
+}
+.appbody_nav .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top:-5px;
+    right: -52px;
+    outline: none;
+    width: 38px;
+    height: 37px;
+    background:#007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.appbody_nav .owl-carousel .owl-nav .owl-next:hover,
+.appbody_nav .owl-carousel .owl-nav .owl-prev:hover{
+    background:#007bff;
+}
 a{
     text-decoration: none;
 }

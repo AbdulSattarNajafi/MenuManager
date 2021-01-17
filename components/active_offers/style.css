@@ -100,9 +100,16 @@
 .list-offers .list-links .list-links-item:hover a{
     color: #fff;
 }
+.list-offers .list-links .right_lists{
+    display: none;
+}
+.list-offers .list-links .right_active{
+    display: block;
+}
 
 /*Middle Content*/
-#activate-offer #activate-toggle{
+#activate-offer #activate-toggle,
+#activate-offer .activate-toggle{
     display: flex;
     justify-content: space-between;
     border: 3px solid #ffa64d;
@@ -112,7 +119,12 @@
     background: #ffd9b3;
     padding: .1rem .6rem;
 }
-#activate-offer #activate-toggle .bold-text{
+#activate-offer .active-toggle{
+    border-color: green;
+    background: #cfc;
+}
+#activate-offer #activate-toggle .bold-text,
+#activate-offer .activate-toggle .bold-text{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
@@ -122,11 +134,11 @@
     font-style: 16px;
     font-weight: 500;
 }
-#activate-offer #activate-toggle .btns-container{
+#activate-offer .activate-toggle .btns-container{
     display: flex;
     align-items: center;
 }
-#activate-offer #activate-toggle .btns-container .activate-btn{
+#activate-offer .activate-toggle .btns-container .activate-btn{
     border: none;
     outline: none;
     background: red;
@@ -138,7 +150,7 @@
     color: #fff;
     padding: 0  8px 2px 8px;
 }
-#activate-offer #activate-toggle .btns-container .eye-btn{
+#activate-offer .activate-toggle .btns-container .eye-btn{
     border: none;
     outline: none;
     border: 1.5px solid #ffc107;
@@ -163,6 +175,10 @@
 }
 #activate-offer #inputs-wrapper .inputs-row .inputs-container{
     width: 53%;
+}
+#activate-offer #inputs-wrapper .inputs-row .inputs-container .price-input{
+    text-align: center;
+    font-weight: bold;
 }
  #activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
     width: 100%;
