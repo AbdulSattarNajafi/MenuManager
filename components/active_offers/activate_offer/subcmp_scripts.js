@@ -18,21 +18,38 @@ $('.list-links .left_lists').unbind('click').click(function(e) {
   $(this).addClass('selected'); 
   $(this).removeClass('disselected');
 });
-
-function activateDeactivate() {
+//Activate and Deactive Button
+function activate() {
   const activateBtn = document.querySelector('.activate-btn');
-  const activateContainer = document.querySelector('.activate-toggle');
-
+  const deactivateBtn = document.querySelector('.deactivet-btn');
   const leftLists = document.querySelectorAll('.left_lists');
   const rightLists = document.querySelectorAll('.right_lists');
   
   activateBtn.addEventListener('click', () =>{
-    activateContainer.classList.add('active-toggle')
-    activateBtn.textContent = 'Activate';
-    if(leftLists[0].classList.contains('selected')){
-      rightLists[0].classList.add('right_active')
-      leftLists[0].style.display = 'none';
-    }
-  })
+    rightLists[0].classList.add('right_active');
+    leftLists[0].classList.add('left_active');
+    activateBtn.style.display = 'none';
+    deactivateBtn.style.display = 'block';
+  });
+
+  deactivateBtn.addEventListener('click', () => {
+    rightLists[0].classList.remove('right_active');
+    leftLists[0].classList.remove('left_active');
+    activateBtn.style.display = 'block';
+    deactivateBtn.style.display = 'none';
+  });
+
 };
-activateDeactivate();
+activate();
+//Eye Active and Deactive
+function eyeActive() {
+  const eyebtn = document.querySelector('.eye-btn');
+  const eyeOn = document.querySelector('.eye-on');
+  const eyeOff = document.querySelector('.eye-off');
+  eyebtn.addEventListener('click', () => {
+    eyebtn.classList.toggle('eye-deactive')
+    eyeOn.classList.toggle('eye-on-deactive');
+    eyeOff.classList.toggle('eye-off-active')
+  })
+}
+eyeActive();
