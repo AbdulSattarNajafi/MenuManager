@@ -174,25 +174,29 @@
 }
 /*Middele Section Image*/ 
 #selected_offer .filldata_image_container{
-    width: 100%;
+    width: 86%;
     margin: auto;
     height: 320px;
     margin-top: .5rem;
     border: 3px solid #ccc;
 }
 #selected_offer #image_uon_desc{
+    background-color: #ffc107;
+    width:86%;
+    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: .4rem;
-}
-#image_uon_desc #image_uon{
-    width:100%;
-    text-align: center;
+    padding: 3px 5px;
     border-radius: 5px;
-    padding: 5px;
-    font-size: 1.4em;
-    background-color: #ffc107;
 }
+#selected_offer #image_uon_desc .uon-number{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
 
 

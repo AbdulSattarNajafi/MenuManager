@@ -84,6 +84,10 @@ a{
 #create_filldata_data .filldata-input {
     padding: 0;
 }
+#create_filldata_data .filldata-input .price_input{
+    text-align: center;
+    font-weight: bold;
+}
 
 #create_filldata_data .option-group{
     margin-bottom: 5px;;
