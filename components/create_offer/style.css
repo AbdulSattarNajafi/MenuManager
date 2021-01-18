@@ -1,6 +1,13 @@
-/*
-    Create New Common CSS
-*/
+/* Sub Heading Buttons*/
+#active_offer .bordered_nav .orange-btn{
+    background-color:  #F79C1A;
+}
+#active_offer .bordered_nav .pink-btn{
+    background-color:#FACEFF;
+}
+#active_offer .bordered_nav .yellow-btn{
+    background-color: #FFF000;
+}
 /*Sub Nav Slider*/
 .appbody_nav{
     display: flex;

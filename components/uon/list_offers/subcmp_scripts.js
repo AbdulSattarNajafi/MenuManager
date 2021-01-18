@@ -9,12 +9,27 @@
 load_module('create-add-images','create_offer/create_offer/mod_createoffer_imageselect');
 
 //UON Lists
-$('#uon-list .uon-list-item').unbind('click').click(function(e) {
+$('.list-links .list-links-item').unbind('click').click(function(e) {
   e.stopPropagation();
   
-  $('#uon-list .uon-list-item').removeClass('selected');
-  $('#uon-list .uon-list-item').addClass('disselect');
+  $('.list-links .list-links-item').removeClass('selected');
+  $('.list-links .list-links-item').addClass('disselect');
   $(this).addClass('selected'); 
   $(this).removeClass('disselected');
+});
+
+//Slider
+$(document).ready(function(){
+  $(' .owl-carousel').owlCarousel({
+    autoWidht:true,
+    loop:false,
+    rtl:true,
+    nav:true,
+    dots:false,
+    items:7,
+    margin:4,
+  });
+   $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+   $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 });
   

@@ -12,36 +12,9 @@
 /*UON LIsts*/
 #uon_offers{
     margin-top: 30px;
+    margin-bottom: 3rem;
 }
-#uon_offers .uon-offers{
-    padding-right: 2rem;
-}
-.uon-offers #uon-list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-#uon-list .uon-list-item{
-    border: 1.5px solid #eee;
-    border-radius: 5px;
-    padding: 4px 10px 8px 12px;
-    margin-bottom: .4rem;
-    color: black;
-    transition: all .5s ease;
-}
-#uon-list .uon-list-item a{
-    color: black;
-    text-decoration: none;
-}
-#uon-list .uon-list-item:hover,
-#uon-list .selected{
-    background:rgb(0, 123, 255);
-}
-#uon-list .uon-list-item:hover a,
-#uon-list .selected a{
-    color: #fff;
-    transition: all .5s ease;
-}
+
 /*UON Daily Offers*/
 #uon_active_offers{
     margin-top: 30px;
@@ -173,16 +146,18 @@
     display: block;
 }
 /*Middele Section Image*/ 
-#selected_offer .filldata_image_container{
-    width: 86%;
+#selected_offer .filldata_image_container,
+#uon-list-img .filldata_image_container{
+    width: 280px;
     margin: auto;
-    height: 320px;
+    height: 300px;
     margin-top: .5rem;
     border: 3px solid #ccc;
 }
-#selected_offer #image_uon_desc{
+#selected_offer #image_uon_desc,
+#uon-list-img #image_uon_desc{
     background-color: #ffc107;
-    width:86%;
+    width: 280px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -190,13 +165,19 @@
     padding: 3px 5px;
     border-radius: 5px;
 }
-#selected_offer #image_uon_desc .uon-number{
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
-    width: 100%;
+#selected_offer #image_uon_desc p,
+#uon-list-img #image_uon_desc p{
     margin-bottom: 0;
 }
-
-
+#selected_offer #image_uon_desc .uon-number,
+#uon-list-img #image_uon_desc .uon-number{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    width: 72%;
+}
+/*UON List Image*/
+#activate-offer #uon-list-img{
+    width: 100%;
+}
 
