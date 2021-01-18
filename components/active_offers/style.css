@@ -184,36 +184,44 @@
 #activate-offer .activate-toggle .btns-container .eye-btn .eye-off-active{
     display: block;
 }
-/*Middele Section Image*/
 #activate-offer #inputs-wrapper{
     width: 100%;
     margin: auto;
     margin-top: .6rem;
+    padding: .2rem 0 .2rem .1rem;
+    position: relative;
 }
-#activate-offer #inputs-wrapper .filldata_image_container{
-    width: 86%;
-    margin: auto;
-    height: 320px;
-    border: 3px solid #ccc;
-}
-#activate-offer #inputs-wrapper #image_uon_desc{
-    background-color: #ffc107;
-    width:86%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    margin-top: .4rem;
-    padding: 3px 5px;
+#activate-offer #inputs-wrapper .layer{
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: 0;
+    right: -6px;
     border-radius: 5px;
 }
-#activate-offer #inputs-wrapper #image_uon_desc p{
-    margin-bottom: 0;
+#activate-offer #inputs-wrapper .inputs-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+    width: 100%;
 }
-#activate-offer #inputs-wrapper #image_uon_desc .order-number{
-    font-size: 1.4rem;
+#activate-offer #inputs-wrapper .inputs-row .inputs-label{
+    width: 47%;
     font-weight: 600;
-    text-align: center;
-    width: 80%;
 }
-
+#activate-offer #inputs-wrapper .inputs-row .inputs-container{
+    width: 53%;
+}
+#activate-offer #inputs-wrapper .inputs-row .inputs-container .price-input{
+    text-align: center;
+    font-weight: bold;
+}
+#activate-offer #inputs-wrapper .inputs-row .inputs-container .form-control{
+    width: 100%;
+}
+#activate-offer #inputs-wrapper .inputs-row .date input{
+    font-style: italic;
+    font-weight: 600;
+}
 
