@@ -9,7 +9,7 @@ $('.date input').datetimepicker({
   format : "DD MMM YY           HH:mm",
 });
 
-//Right lists Links
+//Left lists Links
 $('.list-links .left_lists').unbind('click').click(function(e) {
   e.stopPropagation();
   

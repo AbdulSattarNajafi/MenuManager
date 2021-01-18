@@ -1,19 +1,13 @@
 <div id="active_offers">
 <!-- List Offers-->
 
-<div class="container" id="list_active_offers">
+<div class="container" id="uon_active_offers">
 
   <div class="row">
-    <div class="col-sm-4" id="section_offers">
-      <h4 class="activeoffers-section-title" style="margin-left: 14px;">Daily Offers</h4>
-      <ul class="list-group" style="margin-left: 14px;">
-        <li class="list-group-item selected mb-2" style="text-align: left; padding-left: 20px;"><a href="#" class="active">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
-        <li class="list-group-item mb-2" style="text-align: left; padding-left: 20px;"><a href="#">
-          Daily Offer 1 [Alternative Name]
-        </a></li>
-        <li class="list-group-item mb-2" style="text-align: left; padding-left: 20px;"><a href="#">
+    <div class="col-sm-4" id="uon_section_offers">
+      <h4 class="activeoffers-section-title">Daily Offers</h4>
+      <ul id="list-group">
+        <li class="list-group-item left-lists selected"><a href="#" class="active">
           Daily Offer 1 [Alternative Name]
         </a></li>
       </ul>
@@ -21,43 +15,37 @@
 
     <div class="col-sm-4" id="selected_offer">
       <h4 class="activeoffers-section-title">Activate / Deactivate Offer</h4>
-      <div class="row" id="active-toggle">
-            <div class="active-toggle-title">Daily Offer 1</div>
-            <button class="btn btn-danger">Deactivate <i class="fa fa-close"></i></button>
+      <div class="row" id="uon-active-toggle">
+        <div>
+          <p class="bold-text">Daily Offer 1</p>
+          <p class="bold-text">Alternative Name</p>
+        </div>
+        <div class="btns-container">
+          <button type="button" class="activate-btn">Activate</button>
+          <button type="button" class="deactivet-btn">deActivate</button>
+          <button type="button" class="eye-btn">
+            <span class="eye-on"><i class="fa fa-eye"></i></span>
+            <span class="eye-off"><i class="fa fa-eye-slash"></i></span>
+          </button>
+        </div>
       </div>
-      <div class="col-sm-auto text-left" id="create_filldata_image">
-        <div class="filldata_image_container text-center" style="width:310px; height:320px;">
+
+        <div class="filldata_image_container">
             <img class="filldata_image_image img-fluid" src="assets/img/no-image.jpg"/>
-            
         </div>
          
-      </div>
       <div id="image_uon_desc">
         <div id="image_uon">00-45-332-12</div>
       </div>
 
     </div>
 
-    <div class="col-sm-4" id="active_uon">
+    <div class="col-sm-4" id="uon_active_right">
       <h4 class="activeoffers-section-title">Active UON</h4>
-      <ul class="list-group">
-        <li class="list-group-item selected text-right mb-2">
-          <div class="activeuon_item val_uon">
-            <div style="color: #fff; margin-left: -60px;">00-45-332-12</div>
-          </div>
-          <div class="activeuon_item val_global_btn">
-            <button class="btn btn-warning"><i class="fa fa-eye"></i></button>
-          </div>
-        </li>
-
-        <li class="list-group-item text-right mb-2">
-          <div class="activeuon_item val_uon">
-            <div  style="margin-left: -60px;">00-15-292-37</div>
-          </div>
-          <div class="activeuon_item val_global_btn">
-            <button class="btn btn-warning"><i class="fa fa-eye"></i></button>
-          </div>
-        </li>
+      <ul id="list-group">
+        <li class="list-group-item right-lists selected"><a href="#" class="active">
+          Daily Offer 1 [Alternative Name]
+        </a></li>
       </ul>
     </div>
 

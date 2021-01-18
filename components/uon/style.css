@@ -1,137 +1,198 @@
-/*
-    Active Offers CSS
-*/
-#list_active_offers{
-    margin-top:20px;
-    padding-bottom: 30px;
-}
-#list_active_offers ul li{
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .4s;
-}
-#list_active_offers ul li:hover{
-    background-color: #007bff;
-}
-#list_active_offers ul li a{
-    text-decoration: none;
-    color: black;
-    transition: .4s;
-}
-#list_active_offers ul li .active{
-    color: #fff;
-}
-#list_active_offers ul li:hover a{
-    color: #fff;
-}
 
-.activeoffers-section-title{
+/* Sub Heading Buttons*/
+#create_offer .bordered_nav .orange-btn{
+    background-color:  #F79C1A;
+}
+#create_offer .bordered_nav .pink-btn{
+    background-color:#FACEFF;
+}
+#create_offer .bordered_nav .yellow-btn{
+    background-color: #FFF000;
+}
+/*UON LIsts*/
+#uon_offers{
+    margin-top: 30px;
+}
+#uon_offers .uon-offers{
+    padding-right: 2rem;
+}
+.uon-offers #uon-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#uon-list .uon-list-item{
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    padding: 4px 10px 8px 12px;
+    margin-bottom: .4rem;
+    color: black;
+    transition: all .5s ease;
+}
+#uon-list .uon-list-item a{
+    color: black;
+    text-decoration: none;
+}
+#uon-list .uon-list-item:hover,
+#uon-list .selected{
+    background:rgb(0, 123, 255);
+}
+#uon-list .uon-list-item:hover a,
+#uon-list .selected a{
+    color: #fff;
+    transition: all .5s ease;
+}
+/*UON Daily Offers*/
+#uon_active_offers{
+    margin-top: 30px;
+    margin-bottom: 3rem;
+}
+#uon_active_offers #uon_section_offers{
+    padding-right: 1.6rem;
+}
+#uon_active_offers #uon_active_right{
+    padding-left: 1.6rem;
+}
+#uon_section_offers .activeoffers-section-title,
+#uon_active_right .activeoffers-section-title{
     text-align: center;
     font-size: 14pt;
-    padding:10px;
+    padding: 8px 10px 10px 10px;
     background-color: #eee;
     border-radius: 5px;
 }
-.active-toggle-title{
+#uon_section_offers #list-group,
+#uon_active_right #list-group{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#list-group .list-group-item{
+    border: 1.5px solid #eee;
+    border-radius: 5px;
+    padding: 4px 10px 8px 12px;
+    margin-bottom: .4rem;
+    transition: all .5s ease;
+}
+#list-group .list-group-item a{
+    text-decoration: none;
+    color: black;
+    transition: all .5s ease;
+}
+#list-group .list-group-item:hover,
+#list-group .selected{
+    background: rgb(0, 123, 255);
+}
+#list-group .list-group-item:hover a,
+#list-group .selected a{
+    color: #fff;
+}
+#list-group .right-lists{
+    display: none;
+}
+#list-group .right_activate{
+    display: block;
+}
+#uon_section_offers #list-group .left_activate{
+    display: none;
+}
+/*UON Middle Section*/
+#selected_offer .activeoffers-section-title{
+    text-align: center;
     font-size: 14pt;
-    padding: 2px 0px;
-    padding-left:20px;
-    font-weight: 600;
+    padding: 8px 10px 10px 10px;
+    background-color: #eee;
+    border-radius: 5px;
 }
-#active-toggle{
-    margin-left:0px;
-    margin-right:0px;
-    background-color: #cfc;
-    border: solid 2px green;
+#selected_offer #uon-active-toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #ffa64d;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: #ffd9b3;
+    padding: .1rem .6rem;
+}
+#selected_offer #uon-active-toggle .bold-text{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#uon-active-toggle .btns-container{
+    display: flex;
+    align-items: center;
+}
+#uon-active-toggle .btns-container .activate-btn{
+    border: none;
+    outline: none;
+    background: green;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    padding: 0  8px 2px 8px;
+}
+#uon-active-toggle .btns-container .deactivet-btn{
+    border: none;
+    outline: none;
+    background: red;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    padding: 0  8px 2px 8px;
+    display: none;
+}
+#uon-active-toggle .btns-container .eye-btn{
+    border: none;
+    outline: none;
     border-radius: 4px;
-    margin-bottom: 15px;
-    position: relative;
-    height: 47px;
+    background: #ffc107;
 }
-#active-toggle button{
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    padding-top: 0;
-    padding-bottom: 2px;
+#uon-active-toggle .btns-container .eye-deactive{
+    background: #fff;
 }
-
-.selected_offer{
-    margin:0 0 0 0;
-    padding: 0 0 0 0;
+#uon-active-toggle .btns-container .eye-btn .eye-on{
+    font-size: 1.28rem;
+    color: black;
 }
-
-.active_data_row{
-    padding: 0 0;
-    margin: 2px 0;
-    color: #666;
+#uon-active-toggle .btns-container .eye-btn .eye-on-deactive{
+    display: none;
 }
-
-.active_data_row div{
-    vertical-align: middle;
+#uon-active-toggle .btns-container .eye-btn .eye-off{
+    color: #ccc;
+    font-size: 1.28rem;
+    display: none;
 }
-
-
-/*
-    UON
-*/ 
-#image_uon_desc{
+#uon-active-toggle .btns-container .eye-btn .eye-off-active{
+    display: block;
+}
+/*Middele Section Image*/ 
+#selected_offer .filldata_image_container{
+    width: 100%;
+    margin: auto;
+    height: 320px;
+    margin-top: .5rem;
+    border: 3px solid #ccc;
+}
+#selected_offer #image_uon_desc{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: .4rem;
 }
 #image_uon_desc #image_uon{
-    width: 310px;
-    margin-left: 8px;
+    width:100%;
     text-align: center;
     border-radius: 5px;
     padding: 5px;
     font-size: 1.4em;
     background-color: #ffc107;
 }
-.activeuon_item{
-    display: inline-block;
-    color: black;
-}
-.activeuon_item:hover{
-    color: #fff;
-}
-.activeuon_item button{
-    padding: 3px 7px;
-    font-size: .8rem;
-}
-.activeuon_item.val_uon{
-    width: 70%;
-    text-align:left;
-}
-.activeuon_item.val_global_btn{
-    text-align:right;
-}
-.list-group-item{
-    transition: all .3s;
-}
-.list-group-item.selected{
-    background-color: #007bff;
-    color:#fff !important;
-}
-
-.list-group-item:hover{
-    color: #fff;
-}
 
 
-.bordered_nav>button{
-    border: solid 2px #ccc;
-}
-
-.val_global_btn{
-    align-items: right;
-}
-
-#list_active_offers #section_offers li {
-    padding: 10px 0;
-    text-align: center;
-}

@@ -163,7 +163,6 @@
 #activate-offer .activate-toggle .btns-container .eye-btn{
     border: none;
     outline: none;
-    
     border-radius: 4px;
     background: #ffc107;
 }
@@ -195,10 +194,11 @@
 #activate-offer #inputs-wrapper .layer{
     background: rgba(0, 0, 0, .3);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -5px;
     bottom: 0;
-    right: 0;
+    right: -6px;
+    border-radius: 6px;
 }
 #activate-offer #inputs-wrapper .inputs-row{
     display: flex;
