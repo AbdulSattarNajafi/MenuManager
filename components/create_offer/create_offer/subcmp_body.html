@@ -27,16 +27,13 @@
   </div>
 </div>
 
-
-
 <div class="container" id="create_filldata">
   <div class="row">
-    <div class="col-sm-2 text-left" id="create_filldata_title">
+    <div class="col-sm-3 text-left" id="create_filldata_title">
       <div class="daily_offer_title text-center" style="margin-left:28px;">Daily Offer 1 <br><span id="alternative_name"></span></div>
     </div>
 
-
-    <div class="col-sm-7 text-left" id="create_filldata_data">
+    <div class="col-sm-6 text-left" id="create_filldata_data">
       <div class="option-group row">
         <label class="col-sm-4">
           SKU
@@ -74,20 +71,12 @@
         <label class="label col-sm-4">
           Points
         </label>
-        <div class="col-sm-8 filldata-input">
-          <div style="display: inline-block; width:34px;"> 
-            <img src="assets/img/spend-points.png" alt="spend points">
+        <div class="col-sm-8 filldata-input" id="points-input"> 
+          <img src="assets/img/spend-points.png" alt="spend points">
+            <input class="form-control" placeholder="Spend pts" name="txt_spentpts" id="txt_spentpts">
+          <img src="assets/img/earn-points.png" alt="earn points">
+            <input class="form-control" placeholder="Earn pts" name="txt_earnpts" id="txt_earnpts">
           </div>
-          <div style="display: inline-block; width: 41.6%;"> 
-                  <input class="form-control" placeholder="Spend pts" name="txt_spentpts" id="txt_spentpts">
-          </div>
-          <div style="display: inline-block; width:34px;"> 
-            <img src="assets/img/earn-points.png" alt="earn points">
-          </div>
-          <div style="display: inline-block; width: 40.3%;"> 
-                   <input class="form-control" placeholder="Earn pts" name="txt_earnpts" id="txt_earnpts">
-          </div>
-            </div>
       </div>
 
       <div class="option-group row">
@@ -237,11 +226,8 @@
         </div>
       </div>
       
-
-      
     </div>
 
-    
     <div class="col-sm-auto text-left" id="create_filldata_image">
         <div class="filldata_image_container text-center">
             <h1 id="image_offer_title">Image the Offer</h1>

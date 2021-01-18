@@ -214,24 +214,22 @@ ul#suggest_items li .select_suggest:hover{
 /*
     Add Menu Images
 */
-
-
 #add_menu_images{
     margin-bottom:150px;
 }
-
 #addmenuimages_title{
     margin-top:10px;
     margin-bottom:30px;
 }
-
-    .tab-pane{
-        padding: 10px;
-        border: solid 1px #eee;
-        border-radius: 5px;
-        background-color: #eee;
-    }
-
+.tab-pane{
+    padding: 10px;
+    border: solid 1px #eee;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.tab-pane .form-group{
+    margin-bottom: 6px;
+}
 /*
     Additions
 */    
@@ -311,12 +309,12 @@ ul#suggest_items li .select_suggest:hover{
     }
     div.input-uploader div.uploaded-img{
         width: 48%;
-        margin-top: 1rem;
+        margin-top: 6px;
     }
     div.input-uploader div.facebook-img{
         width: 86px;
         height: 86px;
-        margin-top: 1rem;
+        margin-top: 6px;
     }
     /*
         Add Category

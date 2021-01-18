@@ -75,8 +75,6 @@ a{
 .slider-container .alert.alert-secondary{
     padding: 0 0 0 0;
 }
-
-
 #create_filldata{
     padding:20px 0;
     margin-bottom: 2rem;
@@ -95,12 +93,22 @@ a{
     text-align: center;
     font-weight: bold;
 }
-
+#create_filldata_data #points-input{
+    display: flex;
+    align-items: center;
+}
+#create_filldata_data #points-input img{
+    width: 34px;
+    height: 24px;
+}
 #create_filldata_data .option-group{
-    margin-bottom: 5px;;
+    margin-bottom: 4px;
+    padding-left: 3rem;
 }
 #create_filldata_data .option-group label{
     font-weight: bold !important;
+    padding-left: 2.4rem;
+    padding-right: 0;
 }
 .create_data_additem_stations, 
 .create_data_additem_btn,
@@ -108,8 +116,6 @@ a{
 {
     border:solid 2px #ccc;
 }
-
-
 
 .filldata_image_container{
     position: relative;
@@ -191,7 +197,5 @@ a{
 #list_filldata_titles .list-group li:hover a{
     color: #fff;
 }
-
-
 
 
