@@ -103,11 +103,9 @@ a{
 }
 #create_filldata_data .option-group{
     margin-bottom: 4px;
-    padding-left: 3rem;
 }
 #create_filldata_data .option-group label{
     font-weight: bold !important;
-    padding-left: 2.4rem;
     padding-right: 0;
 }
 .create_data_additem_stations, 
