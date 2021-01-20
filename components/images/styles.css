@@ -231,14 +231,6 @@ ul#suggest_items li .select_suggest:hover{
     margin-bottom: 6px;
 }
 
-.tab-pane .form-group #file-upload-form .facebook-img{
-    width: 280px;
-    height: 300px;
-}
-.tab-pane .form-group #file-upload-form .facebook-img img{
-    width: 280px;
-    height: 300px;
-}
 /*
     Additions
 */    

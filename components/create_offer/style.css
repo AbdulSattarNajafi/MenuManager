@@ -89,9 +89,19 @@ a{
 #create_filldata_data .filldata-input {
     padding: 0;
 }
+.option-group .filldata-input .form-control{
+    padding: .2rem .7rem;
+    height: 34px;
+}
+.option-group .row-inputs input{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 34px;
+}
 #create_filldata_data .filldata-input .price_input{
     text-align: center;
     font-weight: bold;
+    padding: .2rem .7rem;
 }
 #create_filldata_data #points-input{
     display: flex;
@@ -105,7 +115,7 @@ a{
     margin-bottom: 4px;
 }
 #create_filldata_data .option-group label{
-    font-weight: bold !important;
+    font-weight: 600 !important;
     padding-right: 0;
 }
 .create_data_additem_stations, 
