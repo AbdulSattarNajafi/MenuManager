@@ -1,4 +1,10 @@
 
+#today_slider{
+    display: none;
+}
+#hour_slider{
+    display: none;
+}
 /* Sub Heading Buttons*/
 #create_offer .bordered_nav .orange-btn{
     background-color:  #F79C1A;
@@ -87,16 +93,22 @@
     background: #ffd9b3;
     padding: .1rem .6rem;
 }
-#selected_offer #uon-active-toggle .bold-text{
+#selected_offer #uon-active-toggle .bold-text,
+#selected_offer #uon-active-pink .bold-text,
+#selected_offer #uon-active-yellow .bold-text{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
 }
-#uon-active-toggle .btns-container{
+#uon-active-toggle .btns-container,
+#uon-active-pink .btns-container,
+#uon-active-yellow .btns-container{
     display: flex;
     align-items: center;
 }
-#uon-active-toggle .btns-container .activate-btn{
+#uon-active-toggle .btns-container .activate-btn,
+#uon-active-pink .btns-container .activate-btn,
+#uon-active-yellow .btns-container .activate-btn{
     border: none;
     outline: none;
     background: green;
@@ -108,7 +120,9 @@
     color: #fff;
     padding: 0  8px 2px 8px;
 }
-#uon-active-toggle .btns-container .deactivet-btn{
+#uon-active-toggle .btns-container .deactivet-btn,
+#uon-active-pink .btns-container .deactivet-btn,
+#uon-active-yellow .btns-container .deactivet-btn{
     border: none;
     outline: none;
     background: red;
@@ -121,29 +135,52 @@
     padding: 0  8px 2px 8px;
     display: none;
 }
-#uon-active-toggle .btns-container .eye-btn{
+#uon-active-toggle .btns-container .eye-btn,
+#uon-active-pink .btns-container .eye-btn,
+#uon-active-yellow .btns-container .eye-btn{
     border: none;
     outline: none;
     border-radius: 4px;
     background: #ffc107;
 }
-#uon-active-toggle .btns-container .eye-deactive{
+#uon-active-toggle .btns-container .eye-deactive,
+#uon-active-pink .btns-container .eye-deactive,
+#uon-active-yellow .btns-container .eye-deactive{
     background: #fff;
 }
-#uon-active-toggle .btns-container .eye-btn .eye-on{
+#uon-active-toggle .btns-container .eye-btn .eye-on,
+#uon-active-pink .btns-container .eye-btn .eye-on,
+#uon-active-yellow .btns-container .eye-btn .eye-on{
     font-size: 1.28rem;
     color: black;
 }
-#uon-active-toggle .btns-container .eye-btn .eye-on-deactive{
+#uon-active-toggle .btns-container .eye-btn .eye-on-deactive,
+#uon-active-pink .btns-container .eye-btn .eye-on-deactive,
+#uon-active-yellow .btns-container .eye-btn .eye-on-deactive{
     display: none;
 }
-#uon-active-toggle .btns-container .eye-btn .eye-off{
+#uon-active-toggle .btns-container .eye-btn .eye-off,
+#uon-active-pink .btns-container .eye-btn .eye-off,
+#uon-active-yellow .btns-container .eye-btn .eye-off{
     color: #ccc;
     font-size: 1.28rem;
     display: none;
 }
-#uon-active-toggle .btns-container .eye-btn .eye-off-active{
+#uon-active-toggle .btns-container .eye-btn .eye-off-active,
+#uon-active-pink .btns-container .eye-btn .eye-off-active,
+#uon-active-yellow .btns-container .eye-btn .eye-off-active{
     display: block;
+}
+/*UON active toggle pink*/
+#selected_offer #uon-active-pink{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #e573f1;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: #FACEFF;
+    padding: .1rem .6rem;
 }
 /*Middele Section Image*/ 
 #selected_offer .filldata_image_container,
@@ -180,4 +217,56 @@
 #activate-offer #uon-list-img{
     width: 100%;
 }
-
+/*UON Today Offers*/
+#activate-offer #activate-toggle-pink{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #e573f1;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: #FACEFF;
+    padding: .1rem .6rem;
+}
+#activate-offer #activate-toggle-pink .bold-text{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#activate-offer #activate-toggle-pink .offer-amount{
+    font-style: italic;
+    font-style: 16px;
+    font-weight: 500;
+}
+/*UON Hour Offers*/
+#activate-offer #activate-toggle-yellow{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: yellow;
+    padding: .1rem .6rem;
+}
+#activate-offer #activate-toggle-yellow .bold-text{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#activate-offer #activate-toggle-yellow .offer-amount{
+    font-style: italic;
+    font-style: 16px;
+    font-weight: 500;
+}
+/*UON Hour active toggle*/
+#selected_offer #uon-active-yellow{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: yellow;
+    padding: .1rem .6rem;
+}

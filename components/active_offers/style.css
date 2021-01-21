@@ -121,7 +121,9 @@
     padding: .1rem .6rem;
 }
 #activate-offer #activate-toggle .bold-text,
-#activate-offer .activate-toggle .bold-text{
+#activate-offer .activate-toggle .bold-text,
+#activate-offer .activate-toggle-pink .bold-text,
+#activate-offer .activate-toggle-yellow .bold-text{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
@@ -131,11 +133,15 @@
     font-style: 16px;
     font-weight: 500;
 }
-#activate-offer .activate-toggle .btns-container{
+#activate-offer .activate-toggle .btns-container,
+#activate-offer .activate-toggle-pink .btns-container,
+#activate-offer .activate-toggle-yellow .btns-container{
     display: flex;
     align-items: center;
 }
-#activate-offer .activate-toggle .btns-container .activate-btn{
+#activate-offer .activate-toggle .btns-container .activate-btn,
+#activate-offer .activate-toggle-pink .btns-container .activate-btn,
+#activate-offer .activate-toggle-yellow .btns-container .activate-btn{
     border: none;
     outline: none;
     background: green;
@@ -147,7 +153,9 @@
     color: #fff;
     padding: 0  8px 2px 8px;
 }
-#activate-offer .activate-toggle .btns-container .deactivet-btn{
+#activate-offer .activate-toggle .btns-container .deactivet-btn,
+#activate-offer .activate-toggle-pink .btns-container .deactivet-btn,
+#activate-offer .activate-toggle-yellow .btns-container .deactivet-btn{
     border: none;
     outline: none;
     background: red;
@@ -160,28 +168,40 @@
     padding: 0  8px 2px 8px;
     display: none;
 }
-#activate-offer .activate-toggle .btns-container .eye-btn{
+#activate-offer .activate-toggle .btns-container .eye-btn,
+#activate-offer .activate-toggle-pink .btns-container .eye-btn,
+#activate-offer .activate-toggle-yellow .btns-container .eye-btn{
     border: none;
     outline: none;
     border-radius: 4px;
     background: #ffc107;
 }
-#activate-offer .activate-toggle .btns-container .eye-deactive{
+#activate-offer .activate-toggle .btns-container .eye-deactive,
+#activate-offer .activate-toggle-pink .btns-container .eye-deactive,
+#activate-offer .activate-toggle-yellow .btns-container .eye-deactive{
     background: #fff;
 }
-#activate-offer .activate-toggle .btns-container .eye-btn .eye-on{
+#activate-offer .activate-toggle .btns-container .eye-btn .eye-on,
+#activate-offer .activate-toggle-pink .btns-container .eye-btn .eye-on,
+#activate-offer .activate-toggle-yellow .btns-container .eye-btn .eye-on{
     font-size: 1.28rem;
     color: black;
 }
-#activate-offer .activate-toggle .btns-container .eye-btn .eye-on-deactive{
+#activate-offer .activate-toggle .btns-container .eye-btn .eye-on-deactive,
+#activate-offer .activate-toggle-pink .btns-container .eye-btn .eye-on-deactive,
+#activate-offer .activate-toggle-yellow .btns-container .eye-btn .eye-on-deactive{
     display: none;
 }
-#activate-offer .activate-toggle .btns-container .eye-btn .eye-off{
+#activate-offer .activate-toggle .btns-container .eye-btn .eye-off,
+#activate-offer .activate-toggle-pink .btns-container .eye-btn .eye-off,
+#activate-offer .activate-toggle-yellow .btns-container .eye-btn .eye-off{
     color: #ccc;
     font-size: 1.28rem;
     display: none;
 }
-#activate-offer .activate-toggle .btns-container .eye-btn .eye-off-active{
+#activate-offer .activate-toggle .btns-container .eye-btn .eye-off-active,
+#activate-offer .activate-toggle-pink .btns-container .eye-btn .eye-off-active,
+#activate-offer .activate-toggle-yellow .btns-container .eye-btn .eye-off-active{
     display: block;
 }
 #activate-offer #inputs-wrapper{
@@ -224,4 +244,25 @@
     font-style: italic;
     font-weight: 600;
 }
-
+/*Just 4 Today Offer*/
+#activate-offer .activate-toggle-pink{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #e573f1;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: #FACEFF;
+    padding: .1rem .6rem; 
+}
+/*# HRs Offer*/
+#activate-offer .activate-toggle-yellow{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #ffc107;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background: yellow;
+    padding: .1rem .6rem; 
+}

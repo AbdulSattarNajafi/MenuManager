@@ -1,40 +1,56 @@
  load_sub_component('active_offers','list_offers');
 
 
-
+//Sub Header Buttons
 //First button
-  $('.bordered_nav .firs_btn').click(function() {
-    $('.bordered_nav .firs_btn').removeClass('btn-light');
-    $('.bordered_nav .firs_btn').addClass('orange-btn');
-    
-    $('.bordered_nav .sec_btn').removeClass('pink-btn');
-    $('.bordered_nav .sec_btn').addClass('btn-light');
-
-    $('.bordered_nav .thir_btn').addClass('btn-light');
-    $('.bordered_nav .thir_btn').removeClass('yellow-btn');
+function subNavBtns() {
+  const orangeBtn = document.querySelector('.first_btn');
+  const pinkBtn = document.querySelector('.second_btn');
+  const yellowBtn = document.querySelector('.third_btn');
+  //getting the sliders containers
+  const dailySlider = document.querySelector('#daily_slider');
+  const todaySlider = document.querySelector('#today_slider');
+  const hourSlider = document.querySelector('#hour_slider')
+  orangeBtn.addEventListener('click', () => {
+    pinkBtn.classList.remove('pink-btn');
+    pinkBtn.classList.add('btn-light');
+    yellowBtn.classList.remove('yellow-btn');
+    yellowBtn.classList.add('btn-light');
+    orangeBtn.classList.remove('btn-light');
+    orangeBtn.classList.add('orange-btn');
+    //Slider
+    todaySlider.style.display = 'none';
+    hourSlider.style.display = 'none';
+    dailySlider.style.display = 'block';
   });
-//Second button
-  $('.bordered_nav .sec_btn').click(function() {
-    $('.bordered_nav .sec_btn').removeClass('btn-light');
-    $('.bordered_nav .sec_btn').addClass('pink-btn');
 
-    $('.bordered_nav .firs_btn').addClass('btn-light');
-    $('.bordered_nav .firs_btn').removeClass('orange-btn');
-    
-    $('.bordered_nav .thir_btn').addClass('btn-light');
-    $('.bordered_nav .thir_btn').removeClass('yellow-btn');
+  pinkBtn.addEventListener('click', () => {
+    yellowBtn.classList.remove('yellow-btn');
+    yellowBtn.classList.add('btn-light');
+    orangeBtn.classList.remove('orange-btn');
+    orangeBtn.classList.add('btn-light');
+    pinkBtn.classList.remove('btn-light');
+    pinkBtn.classList.add('pink-btn');
+    //Slider
+    dailySlider.style.display = 'none';
+    hourSlider.style.display = 'none';
+    todaySlider.style.display = 'block';
   });
-//Third button
-  $('.bordered_nav .thir_btn').click(function() {
-    $('.bordered_nav .thir_btn').removeClass('btn-light');
-    $('.bordered_nav .thir_btn').addClass('yellow-btn');
 
-    $('.bordered_nav .firs_btn').addClass('btn-light');
-    $('.bordered_nav .firs_btn').removeClass('orange-btn');
-
-    $('.bordered_nav .sec_btn').removeClass('pink-btn');
-    $('.bordered_nav .sec_btn').addClass('btn-light');
+  yellowBtn.addEventListener('click', () => {
+    orangeBtn.classList.remove('orange-btn');
+    orangeBtn.classList.add('btn-light');
+    pinkBtn.classList.remove('pink-btn');
+    pinkBtn.classList.add('btn-light');
+    yellowBtn.classList.remove('btn-light');
+    yellowBtn.classList.add('yellow-btn');
+    //Slider
+    dailySlider.style.display = 'none';
+    todaySlider.style.display = 'none';
+    hourSlider.style.display = 'block';
   });
+};
+subNavBtns();
 
 //Slider
 $(document).ready(function(){

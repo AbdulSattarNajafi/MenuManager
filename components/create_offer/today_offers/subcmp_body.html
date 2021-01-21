@@ -1,0 +1,122 @@
+<div id="list_offers">
+  <!-- List Offers-->
+  
+  <!-- Collapse Module Add Images -->
+  <div class="collapse" id="create-add-images">  
+  </div>
+  <!-- / Collapse -->
+  
+  <div class="container" id="create_button_row">
+    <div class="row">
+      <div class="col-sm-12 text-left" id="menu_add_row">
+        <button type="button" id=""   class="btn btn-light">
+          Create
+        </button>
+  
+        <button type="button" id="btn_addtorow_additions" class="btn btn-light" >
+          Edit
+        </button>
+  
+        <button type="button" id="btn_addtorow_image" class="btn btn-light" data-toggle="collapse" data-target="#create-add-images" aria-expanded="false" aria-controls="menu-add-collapse">
+          Image Offer
+        </button>
+        <button type="button" id="btn_addtorow_video" class="btn btn-light" data-toggle="collapse" data-target="#create-add-images" aria-expanded="false" aria-controls="menu-add-collapse">
+          Video Offer
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="list_filldata">
+    <div class="row">
+      <div class="col-sm-4"  id="list_filldata_titles">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action selected">
+            <a href="#">Today Offer 1 [The Grand Treat]</a>
+          </li>
+          <li class="list-group-item list-group-item-action" >
+            <a href="#">Today Offer 2 [Buy 1 Get 1 Free]</a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="#">Today Offer 3 [Burger n Pizza]</a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="#">Today Offer 4 [Alternate Name]</a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="#">Today Offer 5 [Alternate Name]</a>
+          </li>
+        </ul>
+      </div>
+  
+  
+      <div class="col-sm-5 text-left" id="create_filldata_data">
+        <div class="row" style="padding-bottom:20px"> 
+          <h4 class="col-sm-8">Today Offer 1<br><span style="font-size: 80%; color:#444;">The Grand Treat </span></h4>
+          <div class="col-sm-4"><h3 class="text-right">£ 5.50</h3></div> 
+        </div>
+  
+        <div class="row">
+          <h4 class="col-sm-1">1</h4>
+          <h4 class="col-sm-1">X</h4>
+          <h4 class="col-sm-6">Garlic Bread</h4>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+          <h4 class="col-sm-1">1</h4>
+          <h4 class="col-sm-1">X</h4>
+          <h4 class="col-sm-6">Pizza</h4>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+          <h4 class="col-sm-1">2</h4>
+          <h4 class="col-sm-1">X</h4>
+          <h4 class="col-sm-6">Large Fries</h4>
+          <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+          <h4 class="col-sm-1">2</h4>
+          <h4 class="col-sm-1">X</h4>
+          <h4 class="col-sm-6">Chicken Wings</h4>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+  
+      
+      <div class="col-sm-auto text-left" id="create_filldata_image">
+          <div class="filldata_image_container text-center">
+              <img class="filldata_image_image img-fluid" src="assets/img/no-image.jpg"/>
+            </div>
+          <div class="text-center">
+            <button class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   <!-- Modal Additions-->
+   <div class="modal fade" id="modal_additions_content" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Select Additions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body row" style="widows: 800px;">
+          <div id="modal_additions">
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / List Offers-->
+  </div>

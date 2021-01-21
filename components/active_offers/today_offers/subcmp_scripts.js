@@ -1,3 +1,8 @@
+$('.date input').datetimepicker({
+  format : "DD MMM YY           HH:mm",
+});
+
+//Lis links  
 $('.list-links .list-links-item').unbind('click').click(function(e) {
   e.stopPropagation();
   

@@ -1,14 +1,14 @@
 <div class="container-fluid" id="create_offer">
     <div class="row">
-        <div class="col-sm-12 text-center bordered_nav" style="margin-top:20px">
-            <button type="button" class="btn firs_btn btn-secondary" subcmp_target='list_offers' subcmp_parentcmp="active_offers"> Daily Offer</button>
-            <button type="button" class="btn btn-light sec_btn" subcmp_target='list_offers' subcmp_parentcmp="active_offers">Just 4 Today</button>
-            <button type="button" class="btn btn-light thir_btn" subcmp_target='list_offers' subcmp_parentcmp="active_offers">3 Hrs Offers</button>
+        <div class="col-sm-12 text-center subcmps_navs bordered_nav" style="margin-top:20px">
+            <button type="button" class="btn orange-btn first_btn" subcmp_target='list_offers' subcmp_parentcmp="active_offers"> Daily Offer</button>
+            <button type="button" class="btn btn-light second_btn" subcmp_target='today_offers' subcmp_parentcmp="active_offers">Just 4 Today</button>
+            <button type="button" class="btn btn-light third_btn" subcmp_target='hour_offers' subcmp_parentcmp="active_offers">3 Hrs Offers</button>
         </div>
     </div>
 </div> 
 
-<div class="container" style="border: none; padding-top: 20px;">
+<div class="container" id="daily_slider" style="border: none; padding-top: 20px;">
     <div class="row appbody_nav" id="subnav-slide-btns">
         <div class="list-btn">
           <button type="button" class="btn btn-primary appbtn_nav" subcmp_target='list_offers' subcmp_parentcmp="active_offers">List</button>
@@ -81,3 +81,151 @@
           <div class="slide-prev"></div>
     </div>  
   </div>
+  <!--=============Today Slider==============-->
+  <div class="container" id="today_slider" style="border: none; padding-top: 20px;">
+    <div class="row appbody_nav" id="subnav-slide-btns">
+        <div class="list-btn">
+          <button type="button" class="btn btn-primary appbtn_nav" subcmp_target='today_offers' subcmp_parentcmp="active_offers">List</button>
+          </div>
+          
+          <!--Slider Starts-->
+          <div class=" owl-carousel owl-theme">
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 1</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 2</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 3</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 4</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 5</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 6</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 7</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 8</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 9</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 10</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 11</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 12</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 13</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 14</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 15</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 16</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 17</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 18</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 19</button>
+            </div>
+            <div class="item">
+              <button type="button" class="btn btn-light appbtn_nav" subcmp_target='today' subcmp_parentcmp="active_offers" >Today Offer 20</button>
+            </div>
+          </div>
+          <!--Slider Ends-->
+          <div class="slide-prev"></div>
+    </div>  
+  </div>
+ <!--=============Today Slider==============-->
+ <div class="container" id="hour_slider" style="border: none; padding-top: 20px;">
+  <div class="row appbody_nav" id="subnav-slide-btns">
+      <div class="list-btn">
+        <button type="button" class="btn btn-primary appbtn_nav" subcmp_target='hour_offers' subcmp_parentcmp="active_offers">List</button>
+        </div>
+        
+        <!--Slider Starts-->
+        <div class=" owl-carousel owl-theme">
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 1</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 2</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 3</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 4</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 5</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 6</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 7</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 8</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 9</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 10</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 11</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 12</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 13</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 14</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 15</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 16</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 17</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 18</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 19</button>
+          </div>
+          <div class="item">
+            <button type="button" class="btn btn-light appbtn_nav" subcmp_target='hour' subcmp_parentcmp="active_offers" >3Hrs Offer 20</button>
+          </div>
+        </div>
+        <!--Slider Ends-->
+        <div class="slide-prev"></div>
+  </div>  
+</div>
