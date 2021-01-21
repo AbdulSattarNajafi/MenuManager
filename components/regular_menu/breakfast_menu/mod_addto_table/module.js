@@ -21,7 +21,10 @@ $('#btn_createinrow_item').click(function(){
             </button>
         </td>
         <td><input type='text' class="form-control pl-1 pr-1"/></td>
-        <td><textarea type='text' class="form-control pl-1 pr-1" style="height:40px; resize:none"></textarea></td>
+        <td id="td_box"><textarea type='text' class="form-control pl-1 pr-1" style="height:40px; resize:none"></textarea>
+          <button type="button" class="ingri-btn"><i class="fa fa-list-alt"></i></button>
+          <input type="text" class="ingri-input">
+        </td>
         <td><input type='text' class="form-control pl-1 pr-1"/></td>
         <td><input type='text' class="form-control pl-1 pr-1"/></td>
         <td><input type='text' class="form-control  pl-1 pr-1"/></td>
@@ -48,7 +51,17 @@ $('#btn_createinrow_item').click(function(){
       $('.edit_row .empty-btn').click(function() {
         $('.edit_row .empty-btn .empty-icon').addClass('fa fa-check fa-lg');
       });
+      function ingrids() {
+        const ingriBtn = document.querySelector('.ingri-btn');
+        const ingriInput = document.querySelector('.ingri-input');
+        ingriBtn.addEventListener('click', () => {
+          ingriBtn.classList.toggle('active');
+          ingriInput.classList.toggle('ingri-show');
+        });
+      };
+      ingrids();
 });
+
 //Images
 $('#btn_addtorow_image').click(function(){
     $('#regmenu_imagecarousel .carousel-inner').slick({
