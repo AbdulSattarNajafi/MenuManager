@@ -69,6 +69,9 @@
     border: 1px solid black;
     border-radius: 4px;
 }
+.edit_row #td_box #text_arr{
+    padding-left: 25px !important;
+}
 #regularmenu_regmenu{
     padding-bottom:200px;
 }

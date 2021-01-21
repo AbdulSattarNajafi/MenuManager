@@ -21,7 +21,7 @@ $('#btn_createinrow_item').click(function(){
             </button>
         </td>
         <td><input type='text' class="form-control pl-1 pr-1"/></td>
-        <td id="td_box"><textarea type='text' class="form-control pl-1 pr-1" style="height:40px; resize:none"></textarea>
+        <td id="td_box"><textarea id="text_arr" type='text' class="form-control pl-1 pr-1" style="height:40px; resize:none"></textarea>
           <button type="button" class="ingri-btn"><i class="fa fa-list-alt"></i></button>
           <input type="text" class="ingri-input">
         </td>
