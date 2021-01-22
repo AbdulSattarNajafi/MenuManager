@@ -128,7 +128,6 @@ function thirdTabActionBtns() {
     });
     e.currentTarget.classList.toggle('active');
   }
-
   btns.forEach(node => {
     node.addEventListener('click', handleClick)
   });
@@ -167,3 +166,32 @@ function createStation() {
   
 };
 createStation();
+//Actions Accordian
+function actionAcordian() {
+  const firstBtn = document.querySelector('#fisrt_action_accordian');
+  const firstCont = document.querySelector('.first_accordian');
+  firstBtn.addEventListener('click', () => {
+   firstCont.classList.toggle('show-row');
+  });
+  const secondBtn = document.querySelector('#second_action_accordian');
+  const secondCont = document.querySelector('.second_accordian');
+  secondBtn.addEventListener('click', () => {
+    secondCont.classList.toggle('show-row');
+  });
+  const thirdBtn = document.querySelector('#third_action_accordian');
+  const thirdCont = document.querySelector('.third_accordian');
+  thirdBtn.addEventListener('click', () => {
+    thirdCont.classList.toggle('show-row');
+  });
+  const fourthBtn = document.querySelector('#fourth_action_accordian');
+  const fourthCont = document.querySelector('.fourth_accordian');
+  fourthBtn.addEventListener('click', () => {
+    fourthCont.classList.toggle('show-row');
+  });
+  const fifthBtn = document.querySelector('#fifth_action_accordian');
+  const fifthCont = document.querySelector('.fifth_accordian');
+  fifthBtn.addEventListener('click', () => {
+    fifthCont.classList.toggle('show-row');
+  });
+};
+actionAcordian();

@@ -1,76 +1,16 @@
 <div class="container head mb-5" id="add_allergens">
 
-  <div class="row">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 bg-light" id="algen">
-      <div class="general-desc mb-3">
-        <!--General Desc Form-->
-        <form id="allergen-form">
-          <div class="form-row">
-            <div class="label">
-              <h4>General Desc:</h4>
-            </div>
-              <div class="txt-area">
-                <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="General Description" spellcheck="false"></textarea>
-                <div class="btns">
-                  <button type="button" class="btn btn-success">Edit</button>
-                <button type="button" class="btn btn-danger">Save</button>
-                </div>
-              </div>
-          </div>
-        </form>
-      </div>
-      <div class="hr-line mb-3"></div>
-      <!--Description Form-->
-      <div class="general-desc">
-        <form action="#" id="allergen-form">
-          <div class="form-row mb-3">
-            <div class="label">
-              <h4>Name:</h4>
-            </div>
-            <div class="input">
-              <input type="text" name="name" id="name" placeholder="Allergen Name">
-            </div>
-          </div>
-          <div class="form-row mb-3">
-            <div class="label">
-              <h4>Num:</h4>
-            </div>
-            <div class="input">
-              <input type="number" name="number" id="namber" placeholder="4">
-            </div>
-          </div>
-          <div class="form-row mb-3">
-            <div class="label">
-              <h4>Image:</h4>
-            </div>
-              <div class="upload-img">
-                <div class="img-container">
-                  <input type="file" name="image" id="file-input">
-                  <p>Upload Image</p>
-                  <img src="assets/img/fish.png" alt="fish image">
-                </div>
-              </div>
-           </div>
-          <div class="form-row">
-            <div class="label">
-              <h4>Description:</h4>
-            </div>
-            <div class="txt-area">
-              <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="Specific Description" spellcheck="false"></textarea>
-              <div class="btns">
-                <button type="button" class="btn btn-success">Edit</button>
-                <button type="button" class="btn btn-danger">Save</button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+  <div class="row mb-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" id="algen-btn-container">
+      <button type="button" class="btn-light" id="algen_btn">
+        Allergens
+      </button>
     </div>
-    <div class="col-sm-2"></div>
+    <div class="col-sm-1"></div>
   </div>
 
-  <div class="row mt-3">
+  <div class="row mb-2 allergens_container">
     <div class="col-sm-1"></div>
     <div class="col-sm-10" id="allergens">
       <!--Allergens Row-1-->
@@ -274,3 +214,75 @@
     </div>
     <div class="col-sm-1"></div>
   </div>
+
+  <div class="row mb-3">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 bg-light" id="algen">
+      <div class="general-desc mb-3">
+        <!--General Desc Form-->
+        <form id="allergen-form">
+          <div class="form-row">
+            <div class="label">
+              <h4>General Desc:</h4>
+            </div>
+              <div class="txt-area">
+                <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="General Description" spellcheck="false"></textarea>
+                <div class="btns">
+                  <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-danger">Save</button>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="hr-line mb-3"></div>
+      <!--Description Form-->
+      <div class="general-desc">
+        <form action="#" id="allergen-form">
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Name:</h4>
+            </div>
+            <div class="input">
+              <input type="text" name="name" id="name" placeholder="Allergen Name">
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Num:</h4>
+            </div>
+            <div class="input">
+              <input type="number" name="number" id="namber" placeholder="4">
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="label">
+              <h4>Image:</h4>
+            </div>
+              <div class="upload-img">
+                <div class="img-container">
+                  <input type="file" name="image" id="file-input">
+                  <p>Upload Image</p>
+                  <img src="assets/img/fish.png" alt="fish image">
+                </div>
+              </div>
+           </div>
+          <div class="form-row">
+            <div class="label">
+              <h4>Description:</h4>
+            </div>
+            <div class="txt-area">
+              <textarea class="form-control dyn-input" name="specific_allergen-desc" id="specific_allergen-desc" style="resize:none; overflow:hidden" height="30" placeholder="Specific Description" spellcheck="false"></textarea>
+              <div class="btns">
+                <button type="button" class="btn btn-success">Edit</button>
+                <button type="button" class="btn btn-danger">Save</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+  

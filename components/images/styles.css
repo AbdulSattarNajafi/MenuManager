@@ -482,9 +482,28 @@ input[type=checkbox] {
 }
 
 /*Allergens Descriptions*/
+#add_allergens #algen-btn-container{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+}
+#add_allergens #algen-btn-container #algen_btn{
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+}
 #allergens{
     padding-right: 2rem;
     padding-left: 2rem;
+}
+#add_allergens .allergens_container{
+    height: 0;
+    overflow-y: hidden;
+    transition: all .8s ease;
+}
+#add_allergens .show_allergens{
+    height: 300px;
 }
 #allergens .first-row{
     display: flex;
@@ -496,6 +515,7 @@ input[type=checkbox] {
 }
 #allergens .first-row .box-container .img-box{
     border: 1px solid gray;
+    height: 44px;
 }
 #allergens .first-row .box-container p{
     margin-bottom: 0;
@@ -532,8 +552,7 @@ input[type=checkbox] {
     margin-right: .45rem;
 }
 #add_stations #substation-container #statns-numbs .first-line, 
-#add_stations #sub-station .first-line, 
-#add_stations #actions-wrapper .first-row{
+#add_stations #sub-station .first-line{
     display: flex;
     justify-content: space-between;
     margin-bottom: .6rem;
@@ -686,12 +705,43 @@ input[type=checkbox] {
 #add_stations #actions-wrapper{
     margin-bottom: 2rem;
 }
+#add_stations #actions-wrapper .show-accordian{
+    display: flex;
+    justify-content: center;
+}
+#add_stations #actions-wrapper .show-accordian button{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+#add_stations #actions-wrapper .show-accordian button:focus{
+    outline: none;
+}
+#add_stations #actions-wrapper .hr-line{
+    border-top: 1.5px solid black;
+    width: 94%;
+    margin: auto;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+#add_stations #actions-wrapper .first-row{
+    display: flex;
+    flex-flow: row wrap;
+    height: 0;
+    overflow-y: hidden;
+    
+    transition: all .5s ease;
+}
+#add_stations #actions-wrapper .show-row{
+    height: 73px;
+}
 #add_stations #actions-wrapper .first-row .actionbtn{
     border: 1.5px solid #ccc;
     border-radius: 4px;
     width: 9.6%;
     text-align: center;
     padding: .2rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
     background: transparent;
 }
 #add_stations #actions-wrapper .first-row .active{
