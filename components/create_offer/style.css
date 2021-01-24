@@ -107,7 +107,12 @@ a{
     display: flex;
     align-items: center;
 }
-#create_filldata_data #points-input img{
+#create_filldata_data #points-input .spend-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+#create_filldata_data #points-input .spend-container img{
     width: 34px;
     height: 24px;
 }
