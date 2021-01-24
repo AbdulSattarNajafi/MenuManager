@@ -106,6 +106,7 @@ a{
 #create_filldata_data #points-input{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 #create_filldata_data #points-input .spend-container{
     display: flex;
