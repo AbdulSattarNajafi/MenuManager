@@ -540,8 +540,45 @@ input[type=checkbox] {
     padding-top: .4rem;
     padding-bottom: 1rem;
 }
+/*Modeal login Form*/
+#add_stations #stations-container #station_login .modal-body{
+    padding: 2rem 1rem;
+}
+#add_stations #stations-container #station_login .modal-body form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#stations-container #station_login .modal-body form label{
+    font-weight: 600;
+}
+#stations-container #station_login .modal-body form .login-btn{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#station_login .modal-body form .login-btn button{
+    padding: .1rem .5rem .2rem .5rem;
+}
 #add_stations #stations-container{
     margin-bottom: 3rem;
+}
+#add_stations #stations-container #stations-form{
+    display: flex;
+    width: 100%;
+}
+#add_stations #stations-container #stations-form .btns-container{
+    width: 190px;
+}
+#stations-container #stations-form .btns-container #delete_station{
+    margin-left: .6rem;
+    margin-right: .4rem;
+}
+#stations-container #stations-form #station-input{
+    width: calc(100% - 190px);
+    padding-left: .4rem;
 }
 #add_stations #stations-container #stations-numbs .first-line{
     display: flex;
@@ -674,22 +711,22 @@ input[type=checkbox] {
 #add_stations #actions-container #actions-form{
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 #add_stations #actions-container #actions-form .btn-container{
-    width: 13%;
+    width: 93px;
+    margin-right: .8rem;
 }
 #add_stations #actions-container #actions-form .inputs{
-    width: 85%;
+    width: calc(100% - 93px);
     display: flex;
-    justify-content: space-between;
 }
 #add_stations #actions-container #actions-form .inputs #show-result{
     width: 12%;
     padding-left: .4rem;
+    margin-right: .9rem;
 }
 #add_stations #actions-container #actions-form .inputs #description{
-    width: 87%;
+    width: 88%;
     padding-left: .4rem;
 }
 #add_stations #actions-container .saveedit-btns{

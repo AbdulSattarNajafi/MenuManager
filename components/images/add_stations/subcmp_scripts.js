@@ -141,7 +141,7 @@ function createStation() {
     
     let count = 0;
     let attr;
-  createBtn.addEventListener('click', () => {
+    createBtn.addEventListener('click', () => {
     count += 1;
     attr = document.createAttribute('type');
     attr.value = 'button';
@@ -152,20 +152,29 @@ function createStation() {
     container.appendChild(newBtn);
 
     let btns = Array.from(container.querySelectorAll('.subs-btns'));
-  const handleClick = (e) => {
-    e.preventDefault();
+    const handleClick = (e) => {
+      e.preventDefault();
+      btns.forEach(node => {
+        node.classList.remove('active');
+      });
+      e.currentTarget.classList.toggle('active');
+    }
     btns.forEach(node => {
-      node.classList.remove('active');
+      node.addEventListener('click', handleClick)
     });
-    e.currentTarget.classList.toggle('active');
-  }
-  btns.forEach(node => {
-    node.addEventListener('click', handleClick)
   });
-});
-  
 };
 createStation();
+//Deleting Station Buttons
+function deleteStationBtn() {
+  const btns = document.querySelectorAll('.subs-btns');
+    btns.forEach(btn => {
+      if(btn.classList.contains('active')){
+        btn.remove();
+      }
+    })
+};
+
 //Actions Accordian
 function actionAcordian() {
   const firstBtn = document.querySelector('#fisrt_action_accordian');
@@ -201,7 +210,7 @@ function addAction() {
   let actionBtns = document.querySelectorAll('.actionbtn');
   actionBtns.forEach((actionBtn, index) => {
     actionBtn.addEventListener('click', () => {
-      inputVal.value = `(${index}) Action`;
+      inputVal.value = `(${index})`;
     })
   })
 };
