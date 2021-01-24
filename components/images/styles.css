@@ -637,12 +637,18 @@ input[type=checkbox] {
 }
 
 #add_stations #sub-station .first-line .station-box{
+    position: relative;
     border: 1.5px solid #ccc;
     border-radius: 4px;
     width: 6.8%;
     text-align: center;
     padding: .2rem;
     background: transparent;
+}
+#add_stations #sub-station .first-line .station-box .circles{
+    position: absolute;
+    top: -10px;
+    left: -5px;
 }
 #add_stations #sub-station .first-line .active{
     background: yellow;
@@ -729,13 +735,15 @@ input[type=checkbox] {
     width: 88%;
     padding-left: .4rem;
 }
-#add_stations #actions-container .saveedit-btns{
+#add_stations #actions-container .saveedit-btns,
+#stations-container .saveedit-btns{
     display: flex;
     justify-content: flex-end;
     padding-right: 2.6rem;
 }
 #add_stations #actions-container .saveedit-btns button,
-#add_stations #actions .sub-btns-container button{
+#add_stations #actions .sub-btns-container button,
+#stations-container .saveedit-btns button{
     border-radius: 4px;
     padding: .1rem .8rem .2rem .8rem;
 }
