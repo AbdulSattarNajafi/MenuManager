@@ -195,3 +195,14 @@ function actionAcordian() {
   });
 };
 actionAcordian();
+//function for changing the value of input in action page
+function addAction() {
+  const inputVal = document.querySelector('#show-result');
+  let actionBtns = document.querySelectorAll('.actionbtn');
+  actionBtns.forEach((actionBtn, index) => {
+    actionBtn.addEventListener('click', () => {
+      inputVal.value = `(${index}) Action`;
+    })
+  })
+};
+addAction()

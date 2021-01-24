@@ -712,6 +712,8 @@ input[type=checkbox] {
 #add_stations #actions-wrapper .show-accordian button{
     border: 1px solid gray;
     border-radius: 5px;
+    margin-bottom: .3rem;
+    margin-top: .3rem;
 }
 #add_stations #actions-wrapper .show-accordian button:focus{
     outline: none;
