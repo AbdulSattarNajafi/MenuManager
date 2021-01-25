@@ -54,3 +54,45 @@
   left: -4px;
   color: yellow;
 }
+/*Daily Offer Body*/
+daily-items{
+  padding-left: 1rem;
+  padding-right: 1.9rem;
+  width: 100%;
+}
+#daily-items .hr-line{
+  border-top: 1.5px solid black;
+  margin-top: 20px;
+}
+#daily-items .items-container{
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#daily-items .items-container .items{
+  display: inline-block;
+  text-align: center;
+  width: 56px;
+  margin-right: 1.4rem;
+}
+#daily-items .items-container .items:last-child{
+  margin-right: 0;
+}
+#daily-items .items-container .items p{
+  margin: 0;
+  margin-bottom: .2rem;
+}
+#daily-items .items-container .items .item{
+  width: 56px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 2px;
+  position: relative;
+}
+#daily-items .items-container .items .item .icons{
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  color: yellow;
+}
