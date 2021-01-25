@@ -1,0 +1,56 @@
+/*Slider*/
+#sliders-container{
+  margin-top: 20px;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+}
+#sliders-container .slide-next{
+  position: relative;
+  width: 5%;
+}
+#sliders-container .owl-carousel{
+  width: 90%;
+}
+/*Reg Menu Body*/
+#reg-items{
+  padding-left: 1rem;
+  padding-right: 1.9rem;
+  width: 100%;
+}
+#reg-items .hr-line{
+  border-top: 1.5px solid black;
+  margin-top: 20px;
+}
+#reg-items .items-container{
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#reg-items .items-container .items{
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  margin-right: 1.4rem;
+}
+#reg-items .items-container .items:last-child{
+  margin-right: 0;
+}
+#reg-items .items-container .items p{
+  margin: 0;
+  margin-bottom: .2rem;
+}
+#reg-items .items-container .items .item{
+  width: 80px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 2px;
+  position: relative;
+}
+#reg-items .items-container .items .item .icons{
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  color: yellow;
+}

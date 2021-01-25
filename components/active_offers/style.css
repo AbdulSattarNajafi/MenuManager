@@ -61,7 +61,10 @@
     margin-bottom: 3rem;
 }
 #list-data .list-offers,
-#daily_active_offers .list-offers{
+#daily_active_offers .list-offers,
+#uon_offers .list-offers,
+#uon_active_offers #uon_section_offers,
+#uon_active_offers #uon_active_right{
     padding-right: 1.6rem;
     padding-left: 1.6rem;
 }
